@@ -58,6 +58,27 @@
         .hero-gradient {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         }
+        
+        /* Accordion Styles - Centralized Configuration */
+        .accordion-button {
+            /* Button base styles */
+        }
+        
+        .accordion-icon {
+            /* Plus icon that rotates to X */
+        }
+        
+        .accordion-icon-emoji {
+            font-size: 2.25rem; /* text-4xl equivalent: 36px */
+        }
+        
+        .accordion-heading {
+            font-size: 1.5rem; /* text-2xl equivalent: 24px */
+        }
+        
+        .accordion-content {
+            /* Content area styles */
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
