@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/boton-catalogo.png'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
-        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
                 Grupo de Consumo
             </h1>
@@ -23,10 +23,10 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
                     <p>
-                        Un grupo de consumo es, en esencia, un grupo de personas que se junta para comprar junta de forma más ventajosa. La ventaja, aparte del precio, es que <strong>decides qué quieres</strong> (y no lo hace el súper por ti).
+                        Un grupo de consumo es, en esencia, un grupo de personas que se organiza para comprar junta de forma más ventajosa. La ventaja, aparte del precio, es que <strong>decides qué quieres</strong> (y no lo hace el súper por ti).
                     </p>
                     <p>
-                        Hay grupos de consumo eco, otros vegetarianos. En la mayoría hay una cesta de productos establecidos. En muchos hay que colaborar en las tareas de transporte, reparto... En AlMercáu optamos por lo más cómodo: no hay compromiso, <strong>sólo tienes que pedir y recoger</strong> (aunque si participas es mucho más interesante y ayudas a mejorar).
+                        Hay grupos de consumo eco, otros vegetarianos... En la mayoría hay una cesta de productos establecidos. En muchos hay que colaborar en las tareas de transporte, reparto... En AlMercáu optamos por lo más cómodo: no hay compromiso, <strong>sólo tienes que pedir y recoger</strong> (aunque si participas es mucho más interesante y ayudas a mejorar).
                     </p>
                     <p>
                         En catálogo intentamos tener algunos productos básicos como legumbres, aceite, conservas (campo y mar) o miel y, cada 2 semanas frescos como patatas, huevos y alguna verdura y fruta de temporada. Además, al compartir los productos con el bar, también tienes vinos, cervezas y vermuts exclusivos. <strong>TODO directo del productor y de calidad excepcional</strong>. Para que comer bien cada día sea más fácil.

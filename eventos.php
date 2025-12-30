@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/mesa-sidra-conservas.jpg'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
-        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
                 Eventos
             </h1>
@@ -12,14 +12,14 @@
             </p>
         </div>
     </section>
-    
+
     <!-- Intro -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-4xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8 text-center">
                 Aprender y disfrutar
             </h2>
-            
+
             <div class="space-y-6 text-xl text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
                 <p>
                     <strong>Cada mes organizamos charlas y catas en AlMercáu.</strong> Conocemos a los productores, aprendemos sobre sus productos, probamos y disfrutamos juntos.
@@ -30,16 +30,16 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Próximos Eventos -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-4xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">
                 Próximos eventos
             </h2>
-            
+
             <div class="space-y-6">
-                
+
                 <!-- Event 1 -->
                 <div class="flex flex-col md:flex-row gap-6 p-6 rounded-xl shadow-lg">
                     <!-- Date Badge -->
@@ -49,23 +49,23 @@
                             <div class="text-sm font-semibold uppercase">FEB</div>
                         </div>
                     </div>
-                    
+
                     <!-- Event Details -->
                     <div class="flex-grow">
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="bg-almercau-blue text-white px-3 py-1 rounded-full text-sm font-semibold">Cata</span>
                         </div>
-                        
+
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Cata de vinos naturales</h3>
-                        
+
                         <p class="text-gray-600 mb-2">
                             <span class="font-semibold">🕐 19:00h</span> • Con Ana de Bodega XYZ
                         </p>
-                        
+
                         <p class="text-gray-700 leading-relaxed mb-4">
                             Probamos 5 vinos naturales y aprendemos sobre vinificación sin sulfitos. Incluye maridaje con quesos y embutidos.
                         </p>
-                        
+
                         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                             <span class="text-lg font-bold text-almercau-blue">10€ (8€ mercantes)</span>
                             <a href="https://wa.me/34611183123?text=Hola,%20quiero%20reservar%20para%20Cata%20de%20vinos%20naturales%20-%2015%20FEB" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold transition">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Event 2 -->
                 <div class="flex flex-col md:flex-row gap-6 p-6 rounded-xl shadow-lg">
                     <!-- Date Badge -->
@@ -84,23 +84,23 @@
                             <div class="text-sm font-semibold uppercase">FEB</div>
                         </div>
                     </div>
-                    
+
                     <!-- Event Details -->
                     <div class="flex-grow">
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="bg-almercau-blue text-white px-3 py-1 rounded-full text-sm font-semibold">Charla</span>
                         </div>
-                        
+
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Del panal al tarro: proceso de la miel</h3>
-                        
+
                         <p class="text-gray-600 mb-2">
                             <span class="font-semibold">🕐 18:30h</span> • Con Miel del Eo
                         </p>
-                        
+
                         <p class="text-gray-700 leading-relaxed mb-4">
                             Charla sobre apicultura tradicional, tipos de miel y cómo reconocer miel de calidad. Degustación incluida.
                         </p>
-                        
+
                         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                             <span class="text-lg font-bold text-green-600">Gratis</span>
                             <a href="https://wa.me/34611183123?text=Hola,%20quiero%20reservar%20para%20Del%20panal%20al%20tarro%20-%2022%20FEB" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold transition">
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Event 3 -->
                 <div class="flex flex-col md:flex-row gap-6 p-6 rounded-xl shadow-lg">
                     <!-- Date Badge -->
@@ -119,23 +119,23 @@
                             <div class="text-sm font-semibold uppercase">MAR</div>
                         </div>
                     </div>
-                    
+
                     <!-- Event Details -->
                     <div class="flex-grow">
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="bg-almercau-blue text-white px-3 py-1 rounded-full text-sm font-semibold">Degustación</span>
                         </div>
-                        
+
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Cervezas artesanas de Asturias</h3>
-                        
+
                         <p class="text-gray-600 mb-2">
                             <span class="font-semibold">🕐 20:00h</span> • Con Cerveza Cotoya
                         </p>
-                        
+
                         <p class="text-gray-700 leading-relaxed mb-4">
                             Probamos diferentes estilos de cerveza artesana y charlamos sobre el proceso de elaboración.
                         </p>
-                        
+
                         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                             <span class="text-lg font-bold text-almercau-blue">10€ (8€ mercantes)</span>
                             <a href="https://wa.me/34611183123?text=Hola,%20quiero%20reservar%20para%20Cervezas%20artesanas%20-%208%20MAR" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold transition">
@@ -144,24 +144,24 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
     <!-- Eventos Pasados -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8 text-center">
                 Qué hemos hecho
             </h2>
-            
+
             <p class="text-xl text-gray-700 text-center mb-12">
                 Aquí iremos guardando memoria de los eventos realizados.
             </p>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
+
                 <!-- Past Event 1 -->
                 <div class="rounded-xl overflow-hidden shadow-lg">
                     <div class="h-48 bg-gray-200 overflow-hidden">
@@ -172,7 +172,7 @@
                         <p class="text-sm text-gray-600">Enero 2026</p>
                     </div>
                 </div>
-                
+
                 <!-- Past Event 2 -->
                 <div class="rounded-xl overflow-hidden shadow-lg">
                     <div class="h-48 bg-gray-200 overflow-hidden">
@@ -183,7 +183,7 @@
                         <p class="text-sm text-gray-600">Diciembre 2025</p>
                     </div>
                 </div>
-                
+
                 <!-- Past Event 3 -->
                 <div class="rounded-xl overflow-hidden shadow-lg">
                     <div class="h-48 bg-gray-200 overflow-hidden">
@@ -194,22 +194,22 @@
                         <p class="text-sm text-gray-600">Noviembre 2025</p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
     <!-- Reservas -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-4xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8 text-center">
                 Cómo reservar
             </h2>
-            
+
             <p class="text-xl text-gray-700 mb-6 text-center">
                 Las plazas son limitadas. Para reservar tu sitio, escríbenos por WhatsApp indicando:
             </p>
-            
+
             <ul class="text-lg text-gray-700 mb-8 space-y-3 max-w-2xl mx-auto">
                 <li class="flex items-start gap-3">
                     <span class="text-almercau-yellow text-2xl">•</span>
@@ -224,7 +224,7 @@
                     <span>Tu nombre y teléfono</span>
                 </li>
             </ul>
-            
+
             <div class="text-center mb-6">
                 <a href="https://wa.me/34611183123?text=Hola,%20quiero%20reservar%20para%20el%20evento" target="_blank" class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-full font-bold text-xl transition transform hover:scale-105 shadow-lg">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -233,7 +233,7 @@
                     Reservar por WhatsApp
                 </a>
             </div>
-            
+
             <p class="text-gray-600 text-center">
                 O pásate por el local y reservas en persona.
             </p>

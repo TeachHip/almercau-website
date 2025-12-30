@@ -1,0 +1,107 @@
+/* ============================================
+   ALMERCÁU CUSTOM EFFECTS
+   Subtle enhancements - easy to toggle on/off
+   ============================================ */
+
+/* 1. STRONG TAGS (black text with brand blue background) */
+strong, b {
+  color: #000000;
+  background-color: rgba(25, 107, 142, 0.1);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Disable strong styling in specific sections */
+.no-strong-style strong,
+.no-strong-style b {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* 2. CUSTOM HIGHLIGHT (brand yellow) */
+mark, ::selection {
+  background-color: #f7ec14;
+  color: #1a1a1a;
+}
+
+mark {
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* 3. BUTTON EFFECTS (subtle hover animations) */
+button, .btn, a[class*="btn"] {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Button hover: subtle lift + shadow */
+button:hover, .btn:hover, a[class*="btn"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px -4px rgba(25, 107, 142, 0.2);
+}
+
+/* Button active: press down */
+button:active, .btn:active, a[class*="btn"]:active {
+  transform: translateY(0);
+}
+
+/* 3. CARDS: subtle shadow on hover */
+.card, [class*="card"], .rounded-2xl {
+  transition: all 0.3s ease;
+}
+
+.card:hover, [class*="card"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.15);
+}
+
+/* 4. IMAGES: Very subtle zoom on hover */
+img {
+  transition: transform 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* 5. LINKS: Underline animation (nav menu, WhatsApp and social links) */
+nav a:not([class*="bg-"]):not([class*="items-center"]),
+a[href*="wa.me"],
+a[href*="whatsapp.com"],
+.social-links a {
+  position: relative;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease;
+}
+
+nav a:not([class*="bg-"]):not([class*="items-center"]):hover,
+a[href*="wa.me"]:hover,
+a[href*="whatsapp.com"]:hover,
+.social-links a:hover {
+  background-size: 100% 2px;
+}
+
+/* 6. SUBTLE ENTRANCE (for elements without animations) */
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 7. SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}

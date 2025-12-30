@@ -4,7 +4,7 @@
 <section class="relative h-screen min-h-[600px] flex items-center justify-center"
     style="background-image: url('gridimages/mesa-sidra-conservas.jpg'); background-size: cover; background-position: center;">
     <div class="hero-gradient absolute inset-0"></div>
-    <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+    <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Del productor al barrio
         </h1>
@@ -23,7 +23,7 @@
     <div class="container mx-auto px-4 max-w-4xl">
         <div class="text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8">Un Proyecto sencillo con mucha Filosofía
-                <br>(y Sabor)</h2>
+                (y&nbsp;Sabor)</h2>
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
                 En AlMercáu sabemos que <strong>otra forma de consumir es posible</strong>. Con organización, cariño y
                 un poco de esfuerzo, conseguimos conectar sin intermediarios los mejores productores con nuestra gente del barrio de Laviada en Gijón.
@@ -42,8 +42,8 @@
             </p>
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
                 AlMercáu, un proyecto de barrio que apuesta por lo mejor de antes y lo mejor de ahora para consumir
-                bien, en armonía. <strong>Sencillez</strong> y <strong>vecindad</strong>, términos que nos representan.
-                <strong>Excelentes productos</strong> y <strong>la tranquilidad de hacer las cosas bien</strong>,
+                bien, en armonía. <strong>Sencillez y vecindad</strong>, términos que nos representan.
+                <strong>Excelentes productos y la tranquilidad de hacer las cosas bien</strong>,
                 razones que te convencen.
             </p>
         </div>
@@ -116,7 +116,7 @@
 
 <!-- Location Section -->
 <section id="contacto" class="py-20 bg-almercau-yellow">
-    <div class="container mx-auto px-4 max-w-6xl">
+    <div class="container mx-auto px-4 max-w-6xl" data-aos="fade-up">
         <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue text-center mb-12">
             Dónde estamos
         </h2>
@@ -124,7 +124,7 @@
         <div class="grid md:grid-cols-2 gap-10 items-start">
 
             <!-- Info Column -->
-            <div class="space-y-8 text-center md:text-left">
+            <div class="space-y-8 text-center md:text-left no-strong-style" data-aos="fade-left" data-aos-delay="100">
                 <div>
                     <h3
                         class="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-2 justify-center md:justify-start">
@@ -174,7 +174,7 @@
 
             <!-- Map Column -->
             <div
-                class="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96 md:h-full min-h-[400px] flex items-center justify-center">
+                class="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96 md:h-full min-h-[400px] flex items-center justify-center" data-aos="fade-right" data-aos-delay="200">
                 <div class="text-center text-gray-600">
                     <svg class="w-16 h-16 mx-auto mb-4 text-almercau-blue" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24">
