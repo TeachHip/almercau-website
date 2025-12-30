@@ -8,15 +8,15 @@
     <meta name="theme-color" content="#196b8e">
     
     <!-- Favicons -->
-    <link rel="icon" href="gridimages/logo_almercau2.png">
-    <link rel="apple-touch-icon" href="gridimages/logo_almercau2.png">
+    <link rel="icon" href="assets/imgs/logo_almercau2.png">
+    <link rel="apple-touch-icon" href="assets/imgs/logo_almercau2.png">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://almercau.org">
     <meta property="og:title" content="AlMercáu - Grupo de consumo en Xixón. Calidad TOP a precio de súper">
     <meta property="og:description" content="Grupo de consumo en Laviada, Gijón. Nos organizamos y negociamos compras al por mayor para conseguir mejores alimentos. No hay tienda.">
-    <meta property="og:image" content="https://almercau.org/gridimages/logo_almercau2.png">
+    <meta property="og:image" content="https://almercau.org/assets/imgs/logo_almercau2.png">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -91,7 +91,7 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="index.php" class="flex items-center">
-                        <img src="gridimages/logo_almercau2.png" alt="AlMercáu" class="h-12 md:h-14">
+                        <img src="assets/imgs/logo_almercau2.png" alt="AlMercáu" class="h-12 md:h-14">
                     </a>
                 </div>
                 

@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 flex items-center justify-center" style="background-image: url('gridimages/vermut-jamon.jpg'); background-size: cover; background-position: center;">
+    <section class="relative h-96 flex items-center justify-center" style="background-image: url('assets/imgs/vermut-jamon.jpg'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4">
             <h1 class="text-5xl md:text-6xl font-bold">

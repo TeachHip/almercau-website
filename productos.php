@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('gridimages/conservas-bonito-1.jpg'); background-size: cover; background-position: center;">
+    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/conservas-bonito-1.jpg'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
@@ -70,7 +70,7 @@
                         <div class="grid md:grid-cols-3 gap-4">
                             <div class="bg-white rounded-lg p-4 shadow-sm">
                                 <div class="h-32 bg-gray-200 rounded mb-3 overflow-hidden">
-                                    <img src="gridimages/jamon-con-cuchillo.jpg" alt="Chorizo" class="w-full h-full object-cover">
+                                    <img src="assets/imgs/jamon-con-cuchillo.jpg" alt="Chorizo" class="w-full h-full object-cover">
                                 </div>
                                 <h4 class="font-bold text-gray-900 mb-1">Chorizo ahumado</h4>
                                 <p class="text-sm text-gray-600">Productor artesano</p>
@@ -78,7 +78,7 @@
                             
                             <div class="bg-white rounded-lg p-4 shadow-sm">
                                 <div class="h-32 bg-gray-200 rounded mb-3 overflow-hidden">
-                                    <img src="gridimages/quesos-tabla.jpg" alt="Queso" class="w-full h-full object-cover">
+                                    <img src="assets/imgs/quesos-tabla.jpg" alt="Queso" class="w-full h-full object-cover">
                                 </div>
                                 <h4 class="font-bold text-gray-900 mb-1">Queso curado de oveja</h4>
                                 <p class="text-sm text-gray-600">Quesería local</p>
@@ -86,7 +86,7 @@
                             
                             <div class="bg-white rounded-lg p-4 shadow-sm">
                                 <div class="h-32 bg-gray-200 rounded mb-3 overflow-hidden">
-                                    <img src="gridimages/vermut-jamon.jpg" alt="Cecina" class="w-full h-full object-cover">
+                                    <img src="assets/imgs/vermut-jamon.jpg" alt="Cecina" class="w-full h-full object-cover">
                                 </div>
                                 <h4 class="font-bold text-gray-900 mb-1">Cecina artesana</h4>
                                 <p class="text-sm text-gray-600">El Bierzo</p>
@@ -119,7 +119,7 @@
                         <div class="grid md:grid-cols-3 gap-4">
                             <div class="bg-white rounded-lg p-4 shadow-sm">
                                 <div class="h-32 bg-gray-200 rounded mb-3 overflow-hidden">
-                                    <img src="gridimages/conservas-bonito-1.jpg" alt="Bonito" class="w-full h-full object-cover">
+                                    <img src="assets/imgs/conservas-bonito-1.jpg" alt="Bonito" class="w-full h-full object-cover">
                                 </div>
                                 <h4 class="font-bold text-gray-900 mb-1">Bonito del Norte</h4>
                                 <p class="text-sm text-gray-600">Conservera Cantábrica</p>
@@ -127,7 +127,7 @@
                             
                             <div class="bg-white rounded-lg p-4 shadow-sm">
                                 <div class="h-32 bg-gray-200 rounded mb-3 overflow-hidden">
-                                    <img src="gridimages/conservas-bonito-2.jpg" alt="Mejillones" class="w-full h-full object-cover">
+                                    <img src="assets/imgs/conservas-bonito-2.jpg" alt="Mejillones" class="w-full h-full object-cover">
                                 </div>
                                 <h4 class="font-bold text-gray-900 mb-1">Mejillones en escabeche</h4>
                                 <p class="text-sm text-gray-600">Galicia</p>
@@ -135,7 +135,7 @@
                             
                             <div class="bg-white rounded-lg p-4 shadow-sm">
                                 <div class="h-32 bg-gray-200 rounded mb-3 overflow-hidden">
-                                    <img src="gridimages/conservas-bonito-3.jpg" alt="Pimientos" class="w-full h-full object-cover">
+                                    <img src="assets/imgs/conservas-bonito-3.jpg" alt="Pimientos" class="w-full h-full object-cover">
                                 </div>
                                 <h4 class="font-bold text-gray-900 mb-1">Pimientos del piquillo</h4>
                                 <p class="text-sm text-gray-600">Navarra</p>
@@ -211,7 +211,7 @@
                         <div class="grid md:grid-cols-4 gap-4">
                             <div class="bg-white rounded-lg p-4 shadow-sm">
                                 <div class="h-32 bg-gray-200 rounded mb-3 overflow-hidden">
-                                    <img src="gridimages/canero-cerveza-cotoya.jpg" alt="Cerveza" class="w-full h-full object-cover">
+                                    <img src="assets/imgs/canero-cerveza-cotoya.jpg" alt="Cerveza" class="w-full h-full object-cover">
                                 </div>
                                 <h4 class="font-bold text-gray-900 mb-1">Cerveza artesana</h4>
                                 <p class="text-sm text-gray-600">Microcervecera</p>
@@ -219,7 +219,7 @@
                             
                             <div class="bg-white rounded-lg p-4 shadow-sm">
                                 <div class="h-32 bg-gray-200 rounded mb-3 overflow-hidden">
-                                    <img src="gridimages/cotoya-bitter-playa-agua.jpg" alt="Bitter" class="w-full h-full object-cover">
+                                    <img src="assets/imgs/cotoya-bitter-playa-agua.jpg" alt="Bitter" class="w-full h-full object-cover">
                                 </div>
                                 <h4 class="font-bold text-gray-900 mb-1">Bitter artesano</h4>
                                 <p class="text-sm text-gray-600">Cotoya</p>

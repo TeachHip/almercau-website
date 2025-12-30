@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('gridimages/con-los-productores.png'); background-size: cover; background-position: center;">
+    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/con-los-productores.png'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
@@ -43,7 +43,7 @@
                 <!-- Card 1 -->
                 <div class="rounded-xl p-6 shadow-lg">
                     <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="gridimages/IMG_20250528_191228.jpg" alt="Miel del Eo" class="w-full h-full object-cover">
+                        <img src="assets/imgs/IMG_20250528_191228.jpg" alt="Miel del Eo" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Miel del Eo</h3>
                     <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
@@ -71,7 +71,7 @@
                 <!-- Card 3 -->
                 <div class="rounded-xl p-6 shadow-lg">
                     <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="gridimages/canero-cerveza-cotoya.jpg" alt="Cerveza Cotoya" class="w-full h-full object-cover">
+                        <img src="assets/imgs/canero-cerveza-cotoya.jpg" alt="Cerveza Cotoya" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Cerveza Cotoya</h3>
                     <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
@@ -86,7 +86,7 @@
                 <!-- Card 4 -->
                 <div class="rounded-xl p-6 shadow-lg">
                     <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="gridimages/quesos-tabla.jpg" alt="Quesería artesana" class="w-full h-full object-cover">
+                        <img src="assets/imgs/quesos-tabla.jpg" alt="Quesería artesana" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Quesería Los Beyos</h3>
                     <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
@@ -101,7 +101,7 @@
                 <!-- Card 5 -->
                 <div class="rounded-xl p-6 shadow-lg">
                     <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="gridimages/conservas-bonito-2.jpg" alt="Conservera" class="w-full h-full object-cover">
+                        <img src="assets/imgs/conservas-bonito-2.jpg" alt="Conservera" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Conservera del Norte</h3>
                     <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
@@ -129,7 +129,7 @@
                 <!-- Card 7 -->
                 <div class="rounded-xl p-6 shadow-lg">
                     <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="gridimages/jamon-con-cuchillo.jpg" alt="Embutidos" class="w-full h-full object-cover">
+                        <img src="assets/imgs/jamon-con-cuchillo.jpg" alt="Embutidos" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Embutidos El Bierzo</h3>
                     <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">

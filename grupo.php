@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('gridimages/boton-catalogo.png'); background-size: cover; background-position: center;">
+    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/boton-catalogo.png'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
@@ -12,175 +12,178 @@
             </p>
         </div>
     </section>
-    
+
     <!-- Qué es el grupo -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">
                 Qué es el grupo
             </h2>
-            
+
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
                     <p>
-                        <strong>AlMercáu no es una tienda.</strong> Es un grupo de consumo donde las mercantes nos organizamos para comprar directamente a productores. Sin intermediarios, sin márgenes comerciales, sin engaños.
+                        Un grupo de consumo es, en esencia, un grupo de personas que se junta para comprar junta de forma más ventajosa. La ventaja, aparte del precio, es que <strong>decides qué quieres</strong> (y no lo hace el súper por ti).
                     </p>
                     <p>
-                        Pagamos una cuota semestral que sostiene el proyecto (local, tiempo, logística). A cambio, accedemos a productos excepcionales a precio de coste más gastos de transporte.
+                        Hay grupos de consumo eco, otros vegetarianos. En la mayoría hay una cesta de productos establecidos. En muchos hay que colaborar en las tareas de transporte, reparto... En AlMercáu optamos por lo más cómodo: no hay compromiso, <strong>sólo tienes que pedir y recoger</strong> (aunque si participas es mucho más interesante y ayudas a mejorar).
                     </p>
                     <p>
-                        Más que ahorro, es <strong>pertenencia</strong>, <strong>calidad</strong> y apoyo a un modelo justo de consumo.
+                        En catálogo intentamos tener algunos productos básicos como legumbres, aceite, conservas (campo y mar) o miel y, cada 2 semanas frescos como patatas, huevos y alguna verdura y fruta de temporada. Además, al compartir los productos con el bar, también tienes vinos, cervezas y vermuts exclusivos. <strong>TODO directo del productor y de calidad excepcional</strong>. Para que comer bien cada día sea más fácil.
+                    </p>
+                    <p>
+                        No menos importantes son las actividades que organizamos (en el bar o fuera) y la pertenencia al grupo que, no está mal decirlo, se compone de personas estupendas. A partir de aquí sólo queda pensar qué más podemos hacer.
                     </p>
                 </div>
-                
+
                 <div class="bg-gray-200 rounded-2xl h-80 flex items-center justify-center overflow-hidden">
-                    <img src="gridimages/IMG_20250528_191228.jpg" alt="Mercantes recogiendo pedidos" class="w-full h-full object-cover">
+                    <img src="assets/imgs/IMG_20250528_191228.jpg" alt="Mercantes recogiendo pedidos" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Cómo funciona -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-7xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-16 text-center">
                 Cómo funciona
             </h2>
-            
+
             <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-                
+
                 <!-- Step 1 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">🤝</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
-                        Paso 1
+                        1
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Te haces mercante</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Date de alta</h3>
                     <p class="text-gray-700">
-                        Cuota de 60€/semestre. Apoyas el proyecto y entras en la comunidad
+                        Por 10€/mes apoyas el proyecto y ¡ya eres mercante!
                     </p>
                 </div>
-                
+
                 <!-- Step 2 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">📱</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
-                        Paso 2
+                        2
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Recibes el catálogo</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Consulta el catálogo</h3>
                     <p class="text-gray-700">
-                        Cada lunes por WhatsApp. Productos disponibles, precios, novedades
+                        Cuando quieras o al recibir los avisos por whatsapp
                     </p>
                 </div>
-                
+
                 <!-- Step 3 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">🛒</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
-                        Paso 3
+                        3
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Haces tu pedido</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Haz tu pedido</h3>
                     <p class="text-gray-700">
-                        App web fácil. Eliges lo que quieres, sin cestas fijas ni compromisos
+                        Fácil desde la app. Lo que quieras, sin pedido mínimo
                     </p>
                 </div>
-                
+
                 <!-- Step 4 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">📦</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
-                        Paso 4
+                        4
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Recoges en el local</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Recoge en el local</h3>
                     <p class="text-gray-700">
-                        Miércoles a sábado en horario de apertura. Todo listo y organizado
+                        En horario de apertura. Frescos de míercoles a viernes
                     </p>
                 </div>
-                
+
                 <!-- Step 5 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">✨</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
-                        Paso 5
+                        5
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Disfrutas</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Disfruta</h3>
                     <p class="text-gray-700">
-                        Productos excepcionales. Sabes de dónde vienen y quién los hace
+                        Productos excepcionales con control de origen
                     </p>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
     <!-- Ventajas -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-16 text-center">
                 Qué ganas siendo mercante
             </h2>
-            
+
             <div class="grid md:grid-cols-2 gap-8">
-                
+
                 <!-- Ventaja 1 -->
                 <div class="flex gap-4 items-start rounded-xl p-6">
                     <div class="text-5xl flex-shrink-0">💰</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Precio de coste + logística</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Precio ajustado</h3>
                         <p class="text-gray-700">
-                            Sin márgenes comerciales. Pagas lo que cuesta más transporte
+                            Sin márgenes comerciales. A veces hasta menos que en origen (por comprar en grupo)
                         </p>
                     </div>
                 </div>
-                
+
                 <!-- Ventaja 2 -->
                 <div class="flex gap-4 items-start rounded-xl p-6">
                     <div class="text-5xl flex-shrink-0">🥬</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Productos frescos únicos</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Productos freeescos</h3>
                         <p class="text-gray-700">
-                            Pedidos quincenales de frutas, verduras, huevos que no encontrarás en otro sitio
+                            En Pedidos de Grupo (quincenales). Frutas, verduras, huevos... que cogen para ti
                         </p>
                     </div>
                 </div>
-                
+
                 <!-- Ventaja 3 -->
                 <div class="flex gap-4 items-start rounded-xl p-6">
                     <div class="text-5xl flex-shrink-0">🎯</div>
                     <div>
                         <h3 class="text-xl font-bold text-gray-900 mb-2">Tu mayordomo de compras</h3>
                         <p class="text-gray-700">
-                            Nosotros buscamos, seleccionamos, traemos. Tú eliges y recoges
+                            AlMercáu selecciona y ofrece. Tú eliges, compras y recoges
                         </p>
                     </div>
                 </div>
-                
+
                 <!-- Ventaja 4 -->
                 <div class="flex gap-4 items-start rounded-xl p-6">
                     <div class="text-5xl flex-shrink-0">🎉</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Eventos con descuento</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Eres del Grupo</h3>
                         <p class="text-gray-700">
-                            Catas, charlas, visitas a productores. Precio especial y prioridad de reserva
+                            Preferencia y ventajas en catas, charlas, actividades...
                         </p>
                     </div>
                 </div>
-                
+
                 <!-- Ventaja 5 -->
                 <div class="flex gap-4 items-start rounded-xl p-6 md:col-span-2">
                     <div class="text-5xl flex-shrink-0">🤲</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Pertenencia al grupo</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Lo haces bien</h3>
                         <p class="text-gray-700">
-                            Comunidad de personas que valoran lo mismo: calidad, honestidad, trato justo
+                            Justo y sostenible. Compras calidad pagando bien a pequeños productores
                         </p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
     <!-- CTA Section -->
     <section class="py-20 bg-almercau-blue">
         <div class="container mx-auto px-4 max-w-4xl text-center">
@@ -188,7 +191,7 @@
                 Únete
             </h2>
             <p class="text-xl text-gray-100 mb-10 leading-relaxed max-w-2xl mx-auto">
-                Si quieres formar parte del grupo, pásate por el local o escríbenos por WhatsApp. Te contamos todo sin compromiso.
+                Si quieres formar parte del grupo, pasa por el local o escríbenos por WhatsApp. Consulta cualquier duda y date de alta directamente.
             </p>
             <a href="https://wa.me/34611183123?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20hacerme%20mercante" target="_blank" class="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 text-white px-12 py-6 rounded-full font-bold text-2xl transition transform hover:scale-105 shadow-2xl">
                 <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">

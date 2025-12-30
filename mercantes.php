@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('gridimages/boton-catalogo.png'); background-size: cover; background-position: center;">
+    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/boton-catalogo.png'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">

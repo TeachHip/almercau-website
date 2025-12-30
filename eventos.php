@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('gridimages/mesa-sidra-conservas.jpg'); background-size: cover; background-position: center;">
+    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/mesa-sidra-conservas.jpg'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
@@ -165,7 +165,7 @@
                 <!-- Past Event 1 -->
                 <div class="rounded-xl overflow-hidden shadow-lg">
                     <div class="h-48 bg-gray-200 overflow-hidden">
-                        <img src="gridimages/comidas-y-raciones.jpg" alt="Evento pasado" class="w-full h-full object-cover">
+                        <img src="assets/imgs/comidas-y-raciones.jpg" alt="Evento pasado" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-lg text-gray-900 mb-2">Encuentro con productores</h4>
@@ -176,7 +176,7 @@
                 <!-- Past Event 2 -->
                 <div class="rounded-xl overflow-hidden shadow-lg">
                     <div class="h-48 bg-gray-200 overflow-hidden">
-                        <img src="gridimages/vermut-jamon.jpg" alt="Evento pasado" class="w-full h-full object-cover">
+                        <img src="assets/imgs/vermut-jamon.jpg" alt="Evento pasado" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-lg text-gray-900 mb-2">Cata de vermuts</h4>
@@ -187,7 +187,7 @@
                 <!-- Past Event 3 -->
                 <div class="rounded-xl overflow-hidden shadow-lg">
                     <div class="h-48 bg-gray-200 overflow-hidden">
-                        <img src="gridimages/quesos-tabla.jpg" alt="Evento pasado" class="w-full h-full object-cover">
+                        <img src="assets/imgs/quesos-tabla.jpg" alt="Evento pasado" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-lg text-gray-900 mb-2">Quesos de Asturias</h4>
