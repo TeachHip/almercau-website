@@ -11,10 +11,20 @@
         <p class="text-xl md:text-2xl mb-10 font-light leading-relaxed">
             Asegura calidad. Disfruta sencillez. Comparte vecindad.
         </p>
-        <a href="#filosofia"
-            class="bg-almercau-yellow hover:opacity-80 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
-            Conoce el proyecto
-        </a>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#filosofia"
+                class="bg-almercau-yellow hover:opacity-80 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
+                Conoce el proyecto
+            </a>
+            <a href="grupo.php"
+                class="bg-almercau-blue hover:opacity-80 text-white px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
+                el Grupo de consumo
+            </a>
+            <a href="degustacion.php"
+                class="bg-white hover:opacity-80 text-almercau-blue px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
+                Al bar
+            </a>
+        </div>
     </div>
 </section>
 
@@ -110,6 +120,50 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+</section>
+
+<!-- Why We're Different Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue text-center mb-12">
+            Por qué AlMercáu es diferente
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <!-- Column 1: Direct from Producer -->
+            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-6xl mb-4">✅</div>
+                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue mb-3">
+                    Directo del productor
+                </h3>
+                <p class="text-lg text-gray-700">
+                    Sin intermediarios que encarecen
+                </p>
+            </div>
+
+            <!-- Column 2: Quality First -->
+            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-6xl mb-4">✅</div>
+                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue mb-3">
+                    Calidad primera
+                </h3>
+                <p class="text-lg text-gray-700">
+                    Trato humano en la selección
+                </p>
+            </div>
+
+            <!-- Column 3: Neighborhood Project -->
+            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-6xl mb-4">✅</div>
+                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue mb-3">
+                    Proyecto de barrio
+                </h3>
+                <p class="text-lg text-gray-700">
+                    Comunidad, no solo comercio
+                </p>
+            </div>
         </div>
     </div>
 </section>

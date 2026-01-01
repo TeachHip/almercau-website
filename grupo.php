@@ -184,13 +184,52 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Requirements Section -->
     <section class="py-20 bg-almercau-blue">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+                Requisitos
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Requirement 1 -->
+                <div class="flex flex-col items-center text-center bg-white rounded-xl p-6 shadow-sm">
+                    <div class="text-4xl mb-4">📍</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Recoger en Laviada</h3>
+                    <p class="text-gray-700">
+                        Tienes que recoger tu pedido en el local en las fechas indicadas.
+                    </p>
+                </div>
+
+                <!-- Requirement 2 -->
+                <div class="flex flex-col items-center text-center bg-white rounded-xl p-6 shadow-sm">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Participar</h3>
+                    <p class="text-gray-700">
+                        Somos un grupo. Sin participación, ideas y colaboración no podemos vivir
+                    </p>
+                </div>
+
+                <!-- Requirement 3 -->
+                <div class="flex flex-col items-center text-center bg-white rounded-xl p-6 shadow-sm">
+                    <div class="text-4xl mb-4">🚶</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Pagar la cuota semestral</h3>
+                    <p class="text-gray-700">
+                        La cuota permite mantener el modelo sin peidos mínimos a precios muy justos.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-4xl text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-6">
                 Únete
             </h2>
-            <p class="text-xl text-gray-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+            <p class="text-xl text-gray-700 mb-10 leading-relaxed max-w-2xl mx-auto">
                 Si quieres formar parte del grupo, pasa por el local o escríbenos por WhatsApp. Consulta cualquier duda y date de alta directamente.
             </p>
             <a href="https://wa.me/34611183123?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20hacerme%20mercante" target="_blank" class="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 text-white px-12 py-6 rounded-full font-bold text-2xl transition transform hover:scale-105 shadow-2xl">
