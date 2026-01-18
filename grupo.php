@@ -26,10 +26,10 @@
                         Un grupo de consumo es, en esencia, un grupo de personas que se organiza para comprar junta de forma más ventajosa. La ventaja, aparte del precio, es que <strong>decides qué quieres</strong> (y no lo hace el súper por ti).
                     </p>
                     <p>
-                        Hay grupos de consumo eco, otros vegetarianos... En la mayoría hay una cesta de productos establecidos. En muchos hay que colaborar en las tareas de transporte, reparto... En AlMercáu optamos por lo más cómodo: no hay compromiso, <strong>sólo tienes que pedir y recoger</strong> (aunque si participas es mucho más interesante y ayudas a mejorar).
+                        Hay grupos de consumo eco, otros vegetarianos... En la mayoría hay una cesta de productos establecidos. En muchos hay que colaborar en las tareas de transporte, reparto... En AlMercáu optamos por lo más cómodo: <strong>sólo tienes que pedir y recoger</strong>. No hay compromiso de pedido mínimo, tenemos productos eco, vegetarianos y veganos, pero no exclusivamente, y no tienes por qué participar... aunque si colaboras es mucho más interesante y ayudas a mejorar.
                     </p>
                     <p>
-                        En catálogo intentamos tener algunos productos básicos como legumbres, aceite, conservas (campo y mar) o miel y, cada 2 semanas frescos como patatas, huevos y alguna verdura y fruta de temporada. Además, al compartir los productos con el bar, también tienes vinos, cervezas y vermuts exclusivos. <strong>TODO directo del productor y de calidad excepcional</strong>. Para que comer bien cada día sea más fácil.
+                        En catálogo intentamos tener algunos productos básicos como legumbres, aceite, conservas (campo y mar), café o miel y, cada 2 semanas frescos como patatas, huevos y alguna verdura y fruta de temporada. Además, al compartir los productos con el bar, también tienes vinos, cervezas y vermuts exclusivos. <strong>TODO directo del productor y de calidad excepcional</strong>. Para que comer bien cada día sea más fácil.
                     </p>
                     <p>
                         No menos importantes son las actividades que organizamos (en el bar o fuera) y la pertenencia al grupo que, no está mal decirlo, se compone de personas estupendas. A partir de aquí sólo queda pensar qué más podemos hacer.
@@ -53,7 +53,7 @@
             <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
 
                 <!-- Step 1 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
+                <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">🤝</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
                         1
@@ -65,50 +65,50 @@
                 </div>
 
                 <!-- Step 2 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
+                <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">📱</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
                         2
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Consulta el catálogo</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 tracking-tight">Consulta el catálogo</h3>
                     <p class="text-gray-700">
-                        Cuando quieras o al recibir los avisos por whatsapp
+                        En la app. Cuando quieras o al recibir los avisos por whatsapp
                     </p>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
+                <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">🛒</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
                         3
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Haz tu pedido</h3>
                     <p class="text-gray-700">
-                        Fácil desde la app. Lo que quieras, sin pedido mínimo
+                        Fácil desde la app. Envíalo, espera al tícket de compra y págalo
                     </p>
                 </div>
 
                 <!-- Step 4 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
+                <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">📦</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
                         4
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Recoge en el local</h3>
                     <p class="text-gray-700">
-                        En horario de apertura. Frescos de míercoles a viernes
+                        En horario de apertura. Frescos de miércoles a viernes
                     </p>
                 </div>
 
                 <!-- Step 5 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center">
+                <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition text-center">
                     <div class="text-6xl mb-4">✨</div>
                     <div class="bg-almercau-yellow text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-3 inline-block">
                         5
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Disfruta</h3>
                     <p class="text-gray-700">
-                        Productos excepcionales con control de origen
+                        Productos excepcionales con control de origen a precio justo
                     </p>
                 </div>
 
@@ -127,55 +127,66 @@
 
                 <!-- Ventaja 1 -->
                 <div class="flex gap-4 items-start rounded-xl p-6">
-                    <div class="text-5xl flex-shrink-0">💰</div>
+                    <div class="text-5xl flex-shrink-0">🥬</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Precio ajustado</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Calidad, calidad y calidad</h3>
                         <p class="text-gray-700">
-                            Sin márgenes comerciales. A veces hasta menos que en origen (por comprar en grupo)
+                            Lo mejor, sin pijaes. Y en Pedidos de Grupo (quincenales) productos freeescos que se cogen para ti
                         </p>
                     </div>
                 </div>
 
                 <!-- Ventaja 2 -->
                 <div class="flex gap-4 items-start rounded-xl p-6">
-                    <div class="text-5xl flex-shrink-0">🥬</div>
+                    <div class="text-5xl flex-shrink-0">👍</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Productos freeescos</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Eliges lo que consumes</h3>
                         <p class="text-gray-700">
-                            En Pedidos de Grupo (quincenales). Frutas, verduras, huevos... que cogen para ti
+                            Sabes qué consumes, qué ingredientes tiene, de dónde viene, cómo se ha producido y cuánto cuesta
                         </p>
                     </div>
                 </div>
 
                 <!-- Ventaja 3 -->
                 <div class="flex gap-4 items-start rounded-xl p-6">
-                    <div class="text-5xl flex-shrink-0">🎯</div>
+                    <div class="text-5xl flex-shrink-0">💰</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Tu mayordomo de compras</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Relación calidad/precio</h3>
                         <p class="text-gray-700">
-                            AlMercáu selecciona y ofrece. Tú eliges, compras y recoges
+                            Sin márgenes comerciales. A veces hasta menos que en origen (por comprar en grupo)
                         </p>
                     </div>
                 </div>
 
                 <!-- Ventaja 4 -->
                 <div class="flex gap-4 items-start rounded-xl p-6">
-                    <div class="text-5xl flex-shrink-0">🎉</div>
+                    <div class="text-5xl flex-shrink-0">🎯</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Eres del Grupo</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Tu mayordomo de compras</h3>
                         <p class="text-gray-700">
-                            Preferencia y ventajas en catas, charlas, actividades...
+                            AlMercáu te escucha, busca, selecciona, negocia y ofrece. Tú eliges, compras y recoges
                         </p>
                     </div>
                 </div>
 
                 <!-- Ventaja 5 -->
-                <div class="flex gap-4 items-start rounded-xl p-6 md:col-span-2">
+                <div class="flex gap-4 items-start rounded-xl p-6">
+                    <div class="text-5xl flex-shrink-0">🎉</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Eres del Grupo</h3>
+                        <p class="text-gray-700">
+                            Participas de un proyecto bien prestoso y tienes preferencia y ventajas en Pedidos Exprés, catas, charlas, actividades...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ventaja 6 -->
+                <div class="flex gap-4 items-start rounded-xl p-6">
                     <div class="text-5xl flex-shrink-0">🤲</div>
                     <div>
                         <h3 class="text-xl font-bold text-gray-900 mb-2">Lo haces bien</h3>
                         <p class="text-gray-700">
-                            Justo y sostenible. Compras calidad pagando bien a pequeños productores
+                            Justo y sostenible. Compras calidad pagando bien a pequeños productores para un cuerpo feliz y una conciencia tranquila
                         </p>
                     </div>
                 </div>
@@ -204,9 +215,9 @@
                 <!-- Requirement 2 -->
                 <div class="flex flex-col items-center text-center bg-white rounded-xl p-6 shadow-sm">
                     <div class="text-4xl mb-4">🤝</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Participar</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Comportarse</h3>
                     <p class="text-gray-700">
-                        Somos un grupo. Sin participación, ideas y colaboración no podemos vivir
+                        Somos un grupo. Imprescindible tratarnos con educación y facilitarnos las vidas.
                     </p>
                 </div>
 
@@ -215,7 +226,7 @@
                     <div class="text-4xl mb-4">🚶</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Pagar la cuota semestral</h3>
                     <p class="text-gray-700">
-                        La cuota permite mantener el modelo sin peidos mínimos a precios muy justos.
+                        La cuota permite mantener el modelo sin pedidos mínimos a precios muy justos.
                     </p>
                 </div>
             </div>

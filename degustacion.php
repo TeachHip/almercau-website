@@ -8,107 +8,178 @@
                 Degustación
             </h1>
             <p class="text-2xl md:text-3xl font-light">
-                Prueba, disfruta, llévate
+                Prueba, comparte y aprende. Disfruta y relájate
             </p>
         </div>
     </section>
-    
+
     <!-- Presentación -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">
-                El bar
+                AlMercáu degustación: el bar
             </h2>
-            
+
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
                     <p>
-                        <strong>AlMercáu Degustación es un bar abierto a todo el mundo.</strong> No hace falta ser mercante para entrar, tomar algo y disfrutar.
+                        <strong>AlMercáu degustación es un bar abierto a todo el mundo.</strong> No hace falta ser mercante para entrar, tomar algo y disfrutar.
                     </p>
                     <p>
-                        Todo lo que servimos viene directo del productor. Los mismos productos excepcionales del grupo de consumo, disponibles en la barra para probar, compartir y llevarte a casa.
+                        Todo lo que servimos viene directo del productor. Los mismos productos de excepcional calidad del Grupo de Consumo, están disponibles en barra para que los pruebes. Así, además de disfrutarlos, puedes decidir llevártelo a casa o darte de alta en el grupo.
+                    </p>
+                    <p>Para beber tenemos vinos únicos de bodegas seleccionadas, cerveza asturiana artesana pero no estrambótica, vermuts premiados, sidra selección y limonada casera. Siempre acompañado de una tapina o pinchín, con cosa buena. Puedes venir varias veces o apuntarte a alguna cata para probarlo todo.</p>
+                    <p>Para comer hay, fundamentalmente, lateo, embutido ibérico de bellota y quesos. Eventualmente ensaladas y guisos con patatas, setas shiitake y otros productos frescos que nos van llegando. Si tenemos tiempo, reservas o estamos inspirados, también innovamos. Pero que sepas que no entran 'productos de súper', todo son combinaciones con nuestros productos, incluido el AOVE especial de Córdoba que es el único aceite que se usa para todo.</p>
+                    <p>
+                        Por lo demás se trata de un espacio tranquilo, sin pretensiones, donde además de la calidad de lo que servimos, prima la atención, el buen trato y el ambiente distendido para charlar entre amigos.
                     </p>
                     <p>
-                        Un espacio tranquilo, sin pretensiones, donde la calidad habla por sí sola.
+                        ¡Ven a degustar y a disfrutar!
                     </p>
                 </div>
-                
+
                 <div class="rounded-2xl h-80 overflow-hidden">
                     <img src="assets/imgs/vermut-jamon.jpg" alt="Interior bar AlMercáu" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Qué servimos -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-16 text-center">
-                En la barra
-            </h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Item 1 -->
-                <div class="text-center p-6">
-                    <div class="text-6xl mb-4">🍽️</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pinchos y raciones</h3>
-                    <p class="text-gray-700">
-                        Embutidos, quesos, conservas. Todo de productores artesanos
-                    </p>
+
+            <!-- Bebidas -->
+            <div class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">Para beber</h2>
+                <div class="grid md:grid-cols-2 gap-8 mb-6">
+
+                    <!-- Bebida 1: Vinos -->
+                    <div class="flex gap-4 items-start rounded-xl p-6">
+                        <div class="text-5xl flex-shrink-0">🍷</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Vinos</h4>
+                            <p class="text-gray-700">
+                                De pequeñas bodegas y D.O.s, diferentes y sorprendentes. Para chatear, degustar o acompañar una ración. Por copa o botella. También cava y vinos generosos. Nueva bodega anual.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bebida 2: Cerveza artesana -->
+                    <div class="flex gap-4 items-start rounded-xl p-6">
+                        <div class="text-5xl flex-shrink-0">🍺</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Cerveza artesana</h4>
+                            <p class="text-gray-700">
+                                Cervezas de pequeños productores artesanos de dAsturias. Diferentes variedades pero sin forzar los sabores para que las disfrutes aunque no seas 'bebedor de cerveza artesana'. Pruébalas o pregunta a quien tengas al lado y rompe otro prejuicio.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bebida 3: Vermuts, sidra -->
+                    <div class="flex gap-4 items-start rounded-xl p-6">
+                        <div class="text-5xl flex-shrink-0">🥃</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Vermuts, sidra</h4>
+                            <p class="text-gray-700">
+                                Vermuts premiados y sidra selección. Perfectos para el aperitivo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bebida 4: Limonada casera -->
+                    <div class="flex gap-4 items-start rounded-xl p-6">
+                        <div class="text-5xl flex-shrink-0">🍋</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Limonada casera...</h4>
+                            <p class="text-gray-700">
+                                Nuestra limonada casera especial. También zumos naturales, batidos, infusiones, café preparado... según temporada.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                
-                <!-- Item 2 -->
-                <div class="text-center p-6">
-                    <div class="text-6xl mb-4">🥖</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bocadillos</h3>
-                    <p class="text-gray-700">
-                        Pan de verdad, rellenos que cambian según producto disponible
-                    </p>
+
+                <!-- Nota para las bebidas -->
+                <div class="bg-almercau-yellow bg-opacity-20 border-l-4 border-almercau-yellow rounded-lg p-6 max-w-4xl mx-auto">
+                    <div class="flex gap-3 items-start">
+                        <div class="text-3xl flex-shrink-0">🍢</div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 mb-1">Pincho / tapina</h4>
+                            <p class="text-gray-800 leading-relaxed">
+                                Todas las bebidas acompañadas de un pequeño pero excelente pincho. Variados, a veces divertidos, de temporada, con opciones sin carne, vegetarianas y veganas.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- Item 3 -->
-                <div class="text-center p-6">
-                    <div class="text-6xl mb-4">🍺</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Cervezas artesanas</h3>
-                    <p class="text-gray-700">
-                        Selección de pequeñas cerveceras. Siempre rotando
-                    </p>
-                </div>
-                
-                <!-- Item 4 -->
-                <div class="text-center p-6">
-                    <div class="text-6xl mb-4">🍷</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Vinos y vermuts</h3>
-                    <p class="text-gray-700">
-                        Naturales, honestos, sin artificios. Para copa o botella
-                    </p>
-                </div>
-                
-                <!-- Item 5 -->
-                <div class="text-center p-6 md:col-span-2 lg:col-span-1">
-                    <div class="text-6xl mb-4">🥣</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Elaboraciones propias</h3>
-                    <p class="text-gray-700">
-                        Guiso de legumbres los viernes, limonada casera, zumos, ensaladas
-                    </p>
-                </div>
-                
             </div>
+
+            <!-- Comidas -->
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">Para comer</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+
+                    <!-- Comida 1: Montadito / pincho -->
+                    <div class="flex gap-4 items-start rounded-xl p-6">
+                        <div class="text-5xl flex-shrink-0">🥖</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Montadito / pincho</h4>
+                            <p class="text-gray-700">
+                                Mini bocata con pan recién tostado y aderezado (pimiento, tomate, salsa casera o sencillamente el mejor AOVE) de queso, embutido, bonito, jamón (del bueno) o lo que tengamos a mano ese día.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Comida 2: Lateo -->
+                    <div class="flex gap-4 items-start rounded-xl p-6">
+                        <div class="text-5xl flex-shrink-0">🥫</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Lateo</h4>
+                            <p class="text-gray-700">
+                                Conservas del mar y el campo de excelente calidad ligeramente aderezadas o debidamente preparadas para conformar un interesante plato para compartir. De unos mejillones en escabeche para 'alegrar' el vermut a una ensalada de bonito y pimientos asados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Comida 3: Ibéricos y quesos -->
+                    <div class="flex gap-4 items-start rounded-xl p-6">
+                        <div class="text-5xl flex-shrink-0">🧀</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Ibéricos y quesos</h4>
+                            <p class="text-gray-700">
+                                Tremendos productos artesanales. De cerdo ibérico de bellota de las mejores dehesas y de leche de animales de pasto de la geografía española. Raciones y medias raciones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Comida 4: Desvaríos de chef -->
+                    <div class="flex gap-4 items-start rounded-xl p-6">
+                        <div class="text-5xl flex-shrink-0">👨‍🍳</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Desvaríos de chef</h4>
+                            <p class="text-gray-700">
+                                Si hay tiempo y ganas, preparamos potajes, guisos, ensaladas originales. ¿Los últimos? Guiso de garbanzos y potarrín, patata en salsa de queso ahumado, ensalada de patata y naranja...
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
-    
+
     <!-- Ambiente -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8 text-center">
                 Cómo es el espacio
             </h2>
-            
+
             <p class="text-xl text-gray-700 leading-relaxed text-center max-w-3xl mx-auto mb-12">
-                Sin tele, sin tabaco, sin marcas comerciales. Simple, limpio, acogedor. Un lugar donde charlar tranquilo y disfrutar de lo que comes y bebes.
+                Sin tele, sin tabaco, sin tragaperras, sin marcas comerciales, sin ruidos. Simple, limpio, acogedor. Un lugar donde charlar tranquilamente y disfrutar de lo que comes y bebes.
             </p>
-            
+
             <!-- Photo Gallery -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="rounded-xl overflow-hidden h-64">
@@ -126,37 +197,37 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Horario -->
     <section class="py-20 bg-almercau-yellow">
         <div class="container mx-auto px-4 max-w-4xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">
                 Cuándo abrimos
             </h2>
-            
+
             <div class="max-w-2xl mx-auto space-y-4 mb-8">
                 <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
                     <span class="text-lg font-semibold text-gray-900">Miércoles</span>
                     <span class="text-lg text-gray-700">17:00 - 21:00h</span>
                 </div>
-                
+
                 <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
                     <span class="text-lg font-semibold text-gray-900">Jueves - Viernes</span>
                     <span class="text-lg text-gray-700">11:00 - 14:30h / 17:00 - 21:00h</span>
                 </div>
-                
+
                 <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
                     <span class="text-lg font-semibold text-gray-900">Sábado</span>
                     <span class="text-lg text-gray-700">11:00 - 15:00h</span>
                 </div>
             </div>
-            
+
             <p class="text-center text-gray-800 font-medium text-lg">
                 Lunes, martes y domingo: cerrado
             </p>
         </div>
     </section>
-    
+
     <!-- CTA Section -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-4xl text-center">
@@ -166,7 +237,7 @@
             <p class="text-xl text-gray-700 mb-12 max-w-2xl mx-auto">
                 No hace falta cuota ni compromiso. El bar es para todo el mundo.
             </p>
-            
+
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="contacto.php" class="inline-flex items-center gap-3 bg-almercau-yellow hover:opacity-80 text-gray-900 px-10 py-5 rounded-full font-bold text-xl transition transform hover:scale-105 shadow-lg">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -175,7 +246,7 @@
                     </svg>
                     Cómo llegar
                 </a>
-                
+
                 <a href="https://wa.me/34611183123?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20bar" target="_blank" class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-full font-bold text-xl transition transform hover:scale-105 shadow-lg">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>

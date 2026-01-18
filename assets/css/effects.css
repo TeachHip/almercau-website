@@ -3,10 +3,10 @@
    Subtle enhancements - easy to toggle on/off
    ============================================ */
 
-/* 1. STRONG TAGS (black text with brand blue background) */
+/* 1. STRONG TAGS (black text with brand yellow background) */
 strong, b {
   color: #000000;
-  background-color: rgba(25, 107, 142, 0.1);
+  background-color: rgba(247, 236, 20, 1);
   padding: 2px 4px;
   border-radius: 3px;
 }
@@ -19,9 +19,9 @@ strong, b {
   border-radius: 0;
 }
 
-/* 2. CUSTOM HIGHLIGHT (brand yellow) */
+/* 2. CUSTOM HIGHLIGHT (brand blue) */
 mark, ::selection {
-  background-color: #f7ec14;
+  background-color: rgba(25, 107, 142, 0.2);
   color: #1a1a1a;
 }
 
