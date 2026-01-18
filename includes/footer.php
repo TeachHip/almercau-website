@@ -1,14 +1,17 @@
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="bg-almercau-blue text-white py-12 border-t border-white">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-start mb-8">
 
-                <!-- Brand Column -->
-                <div class="max-w-lg">
-                    <h3 class="text-2xl font-bold text-almercau-yellow mb-4">AlMercáu</h3>
-                    <p class="text-gray-300 leading-relaxed">
-                        Del productor al barrio. Calidad, transparencia, trato justo y vecindad.
-                    </p>
+                <!-- Brand Column with Logo -->
+                <div class="max-w-lg flex items-center gap-8">
+                    <img src="assets/imgs/almercau.png" alt="AlMercáu logo" class="h-28 w-auto object-contain select-none" style="max-height:6rem;transition:none;">
+                    <div>
+                        <h3 class="text-2xl font-bold text-almercau-yellow mb-2">AlMercáu</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Del productor al barrio. Calidad, transparencia, trato justo y vecindad.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Social Icons -->

@@ -84,6 +84,11 @@ img:hover {
   transform: scale(1.02);
 }
 
+/* Prevent hover zoom on footer logo */
+footer img[alt~="AlMercáu"]:hover {
+  transform: none !important;
+}
+
 /* 5. LINKS: Underline animation (nav menu, WhatsApp and social links) */
 nav a:not([class*="bg-"]):not([class*="items-center"]),
 a[href*="wa.me"],

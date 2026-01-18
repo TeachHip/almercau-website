@@ -1,0 +1,26 @@
+{
+  "name": "AlMercáu",
+  "short_name": "AlMercáu",
+  "description": "Grupo de consumo y bar en Laviada, Gijón. Consumo consciente. Calidad directamente del productor.",
+  "start_url": "/index.php",
+  "display": "standalone",
+  "background_color": "#196b8e",
+  "theme_color": "#196b8e",
+  "icons": [
+    {
+      "src": "/assets/imgs/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/imgs/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/imgs/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
