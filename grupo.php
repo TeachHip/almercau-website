@@ -1,7 +1,10 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+$pageTitle = 'Grupo de Consumo - Consumo consciente y responsable | AlMercáu Gijón';
+include 'includes/header.php'; 
+?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/boton-catalogo.png'); background-size: cover; background-position: center;">
+    <section id="main-content" class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/boton-catalogo.png'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
@@ -12,6 +15,8 @@
             </p>
         </div>
     </section>
+
+<main role="main">
 
     <!-- Qué es el grupo -->
     <section class="py-20 bg-white">
@@ -37,14 +42,14 @@
                 </div>
 
                 <div class="bg-gray-200 rounded-2xl h-80 flex items-center justify-center overflow-hidden">
-                    <img src="assets/imgs/IMG_20250528_191228.jpg" alt="Mercantes recogiendo pedidos" class="w-full h-full object-cover">
+                    <img src="assets/imgs/IMG_20250528_191228.jpg" alt="Mercantes recogiendo pedidos" class="w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Cómo funciona -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 max-w-7xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-16 text-center">
                 Cómo funciona
@@ -251,5 +256,7 @@
             </a>
         </div>
     </section>
+
+</main>
 
 <?php include 'includes/footer.php'; ?>

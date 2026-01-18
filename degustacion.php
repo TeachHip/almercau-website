@@ -1,7 +1,10 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+$pageTitle = 'Bar degustación - Aperitivos de calidad | AlMercáu Gijón';
+include 'includes/header.php'; 
+?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/comidas-y-raciones.jpg'); background-size: cover; background-position: center;">
+    <section id="main-content" class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/comidas-y-raciones.jpg'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
@@ -12,6 +15,8 @@
             </p>
         </div>
     </section>
+
+<main role="main">
 
     <!-- Presentación -->
     <section class="py-20 bg-white">
@@ -39,14 +44,14 @@
                 </div>
 
                 <div class="rounded-2xl h-80 overflow-hidden">
-                    <img src="assets/imgs/vermut-jamon.jpg" alt="Interior bar AlMercáu" class="w-full h-full object-cover">
+                    <img src="assets/imgs/vermut-jamon.jpg" alt="Interior bar AlMercáu" class="w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Qué servimos -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 max-w-6xl">
 
             <!-- Bebidas -->
@@ -183,16 +188,16 @@
             <!-- Photo Gallery -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="rounded-xl overflow-hidden h-64">
-                    <img src="assets/imgs/mesa-sidra-conservas.jpg" alt="Ambiente AlMercáu" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <img src="assets/imgs/mesa-sidra-conservas.jpg" alt="Ambiente AlMercáu" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden h-64">
-                    <img src="assets/imgs/conservas-bonito-1.jpg" alt="Productos AlMercáu" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <img src="assets/imgs/conservas-bonito-1.jpg" alt="Productos AlMercáu" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden h-64">
-                    <img src="assets/imgs/cotoya-bitter-playa-agua.jpg" alt="Bebidas AlMercáu" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <img src="assets/imgs/cotoya-bitter-playa-agua.jpg" alt="Bebidas AlMercáu" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden h-64">
-                    <img src="assets/imgs/canero-cerveza-cotoya.jpg" alt="Barra AlMercáu" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <img src="assets/imgs/canero-cerveza-cotoya.jpg" alt="Barra AlMercáu" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="lazy">
                 </div>
             </div>
         </div>
@@ -256,5 +261,7 @@
             </div>
         </div>
     </section>
+
+</main>
 
 <?php include 'includes/footer.php'; ?>

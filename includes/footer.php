@@ -4,10 +4,10 @@
             <div class="flex justify-between items-start mb-8">
 
                 <!-- Brand Column -->
-                <div class="max-w-md">
+                <div class="max-w-lg">
                     <h3 class="text-2xl font-bold text-almercau-yellow mb-4">AlMercáu</h3>
                     <p class="text-gray-300 leading-relaxed">
-                        Del productor al barrio. Calidad, honestidad, sencillez, vecindad.
+                        Del productor al barrio. Calidad, transparencia, trato justo y vecindad.
                     </p>
                 </div>
 

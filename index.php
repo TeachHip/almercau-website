@@ -1,7 +1,10 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+$pageTitle = 'AlMercáu - Del productor al barrio | Grupo de consumo y bar en Gijón';
+include 'includes/header.php'; 
+?>
 
 <!-- Hero Section -->
-<section class="relative h-screen min-h-[600px] flex items-center justify-center"
+<section id="main-content" class="relative h-screen min-h-[600px] flex items-center justify-center"
     style="background-image: url('gridimages/mesa-sidra-conservas.jpg'); background-size: cover; background-position: center;">
     <div class="hero-gradient absolute inset-0"></div>
     <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
@@ -28,8 +31,10 @@
     </div>
 </section>
 
+<main role="main">
+
 <!-- Philosophy Section -->
-<section id="filosofia" class="py-20 bg-gray-50">
+<section id="filosofia" class="py-20 bg-white">
     <div class="container mx-auto px-4 max-w-4xl">
         <div class="text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8">Un Proyecto sencillo<br>
@@ -77,7 +82,7 @@
 </section>
 
 <!-- Two Cards Section -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 
@@ -85,7 +90,7 @@
             <div id="grupo-consumo"
                 class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition border border-gray-100">
                 <img src="assets/imgs/boton-catalogo.png" alt="Grupo de Consumo"
-                    class="w-full h-64 md:h-80 object-cover">
+                    class="w-full h-64 md:h-80 object-cover" loading="lazy">
                 <div class="p-8 md:p-10">
                     <h3 class="text-2xl md:text-3xl font-bold text-almercau-blue mb-4">
                         Grupo de Consumo
@@ -113,7 +118,7 @@
             <div id="degustacion"
                 class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition border border-gray-100">
                 <img src="assets/imgs/comidas-y-raciones.jpg" alt="Degustación"
-                    class="w-full h-64 md:h-80 object-cover">
+                    class="w-full h-64 md:h-80 object-cover" loading="lazy">
                 <div class="p-8 md:p-10">
                     <h3 class="text-2xl md:text-3xl font-bold text-almercau-blue mb-4">
                         AlMercáu Degustación
@@ -142,7 +147,7 @@
 </section>
 
 <!-- Why We're Different Section -->
-<section class="py-20 bg-gray-50">
+<section class="py-20 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
         <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue text-center mb-12">
             Por qué AlMercáu es diferente
@@ -261,5 +266,7 @@
         </div>
     </div>
 </section>
+
+</main>
 
 <?php include 'includes/footer.php'; ?>

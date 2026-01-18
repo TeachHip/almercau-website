@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlMercáu - Grupo de consumo en Xixón</title>
+    <title><?php echo isset($pageTitle) ? $pageTitle : 'AlMercáu - Grupo de consumo en Xixón'; ?></title>
     <meta name="description" content="Grupo de consumo en Laviada, Gijón. Nos organizamos y negociamos compras al por mayor para conseguir alimentos de calidad TOP a precios de súper.">
     <meta name="theme-color" content="#196b8e">
 
@@ -93,6 +93,9 @@
     // Get current page filename
     $current_page = basename($_SERVER['PHP_SELF']);
     ?>
+
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
     <!-- Header/Navigation -->
     <header class="bg-almercau-yellow shadow-sm sticky top-0 z-50" x-data="{ mobileMenuOpen: false }">

@@ -1,7 +1,10 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+$pageTitle = 'Nuestros Productores - Pequeños artesanos de calidad | AlMercáu';
+include 'includes/header.php'; 
+?>
 
     <!-- Hero Section -->
-    <section class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/con-los-productores.png'); background-size: cover; background-position: center;">
+    <section id="main-content" class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/con-los-productores.png'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
@@ -13,6 +16,8 @@
         </div>
     </section>
 
+<main role="main">
+
     <!-- Agradecimiento -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-4xl">
@@ -20,97 +25,165 @@
                 Nuestros productores
             </h2>
 
-            <div class="space-y-6 text-xl text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+            <div class="space-y-6 text-xl text-gray-700 leading-relaxed text-center">
                 <p>
-                    <strong>AlMercáu existe gracias a los productores que confían en nosotros.</strong> Artesanos, agricultores, ganaderos que cuidan cada detalle y apuestan por un modelo de comercio justo y directo.
+                    <strong>AlMercáu existe gracias a los productores que confían en nosotros.</strong> Artesanos, agricultores, ganaderos, bodegueros... que cuidan cada detalle, miman la calidad y apuestan por un modelo de comercio justo y directo.
                 </p>
                 <p>
-                    Mientras quieran, seguiremos el viaje juntos. Esta es su casa tanto como la nuestra.
+                    Por muy moderno que se esté volviendo todo seguimos, como desde hace muchos siglos, dependiendo de quienes cultivan, crían y elaboran los alimentos que consumimos. No es una frase hecha. Sin ellos no comemos. Ahora, hay productores masivos, industriales, que venden a grandes cadenas y supermercados y cuyos productos y medios de producción son, cuanto menos, dudosos (para la salud, el medio ambiente y la sociedad en general). Cuanto más, perjudiciales.
                 </p>
+                <p>Es por ello que el proyecto de AlMercáu apuesta por pequeños productores de proximidad, responsables, que garantizan calidad, sostenibilidad y un trato justo. Así consumimos y comemos bien (¡muy bien!) y colaboramos con el tejido productivo, el mantenimiento de puestos de trabajo y una sociedad con algo de sentido común.</p>
+                <p>Todos nuestros productores son ejemplares en cuanto al producto que ofrecen y el trato que mantenemos. Cuando no es así (aún no ocurrió) buscamos uno nuevo. Capacidad de elección se llama. Y como buenos profesionales no dejan de enseñarnos. Con el tiempo algunos pasaron a ser parte esencial de AlMercáu. En ese caso les concedemos nuestro particular etiquetado de garantía: Excelente producto. Productores excelentes. Y, tenlo claro, tiene más valor que el FIFA de la paz.</p>
             </div>
         </div>
     </section>
 
     <!-- Listado Productores -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex justify-center mb-8">
+                <img src="assets/imgs/productores-excelentes/certificado-AlMercau-excelente-producto.png" alt="Certificado AlMercáu - Excelente Producto" class="max-w-xs" loading="lazy">
+            </div>
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">
-                Productores excelentes
+                Excelente producto. Productores excelentes.
             </h2>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 gap-6">
 
-                <!-- Card 1 -->
-                <div class="rounded-xl p-6 shadow-lg">
-                    <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="assets/imgs/IMG_20250528_191228.jpg" alt="Miel del Eo" class="w-full h-full object-cover">
+                <!-- Productor 1: Miel del Eo -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/miel-del-eo.jpg" alt="Miel del Eo" class="w-full h-full" loading="lazy">
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Miel del Eo</h3>
-                    <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
-                        <span>📍</span> San Tirso de Abres, Asturias
-                    </p>
-                    <p class="text-almercau-blue font-semibold mb-3">Miel artesana</p>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Miel de producción propia en el occidente asturiano. Trabajo tradicional, respeto por las abejas.
-                    </p>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Miel del Eo</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> San Tirso de Abres, Asturias
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Miel</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Miel 100% natural y artesanal de San Tirso de Abres, en el far-west de Asturias, a 2 pasos de Galicia.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="rounded-xl p-6 shadow-lg">
-                    <div class="h-48 bg-gray-200 rounded-lg mb-4"></div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Setadebosque</h3>
-                    <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
-                        <span>📍</span> Piloña, Asturias
-                    </p>
-                    <p class="text-almercau-blue font-semibold mb-3">Setas shiitake</p>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Cultivo ecológico de setas. Frescas y deshidratadas de máxima calidad.
-                    </p>
+                <!-- Productor 2: Setadebosque -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/setadebosque.jpg" alt="Setadebosque" class="w-full h-full" loading="lazy">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Setadebosque</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> Piloña, Asturias
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Setas shiitake</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Setas shiitake de cultivo artesano y ecológico en tronco, en el concejo de Piloña.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="rounded-xl p-6 shadow-lg">
-                    <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="assets/imgs/canero-cerveza-cotoya.jpg" alt="Cerveza Cotoya" class="w-full h-full object-cover">
+                <!-- Productor 3: Cerveza Cotoya -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/cerveza-cotoya.jpg" alt="Cerveza Cotoya" class="w-full h-full" loading="lazy">
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Cerveza Cotoya</h3>
-                    <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
-                        <span>📍</span> Asturias
-                    </p>
-                    <p class="text-almercau-blue font-semibold mb-3">Cerveza artesana</p>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Cerveza elaborada con pasión y sin prisa. Recetas únicas, sabor auténtico.
-                    </p>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Cerveza Cotoya</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> Lugones, Asturias
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Cerveza artesana</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Cerveza artesana asturiana con algunas variedades que no deberías dejar pasar.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Card 4 -->
-                <div class="rounded-xl p-6 shadow-lg">
-                    <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="assets/imgs/quesos-tabla.jpg" alt="Quesería artesana" class="w-full h-full object-cover">
+                <!-- Productor 4: Granja La Amistad -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/huevos-la-amistad.jpg" alt="Granja La Amistad" class="w-full h-full" loading="lazy">
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Quesería Los Beyos</h3>
-                    <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
-                        <span>📍</span> Picos de Europa, Asturias
-                    </p>
-                    <p class="text-almercau-blue font-semibold mb-3">Quesos de oveja y cabra</p>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Quesos artesanos elaborados con leche de montaña. Curación tradicional en cuevas naturales.
-                    </p>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Granja La Amistad</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> Asturias
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Huevos</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Gallinas felices, huevos de calidad.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Card 5 -->
-                <div class="rounded-xl p-6 shadow-lg">
-                    <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                        <img src="assets/imgs/conservas-bonito-2.jpg" alt="Conservera" class="w-full h-full object-cover">
+                <!-- Productor 5: Bodega Solotero -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/bodega-solotero.jpg" alt="Bodega Solotero" class="w-full h-full" loading="lazy">
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Conservera del Norte</h3>
-                    <p class="text-sm text-gray-600 mb-3 flex items-center gap-2">
-                        <span>📍</span> Cantabria
-                    </p>
-                    <p class="text-almercau-blue font-semibold mb-3">Conservas de pescado</p>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        Bonito del Cantábrico, anchoas, mejillones. Pesca sostenible, elaboración artesana.
-                    </p>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Bodega Solotero</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> León
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Vinos</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Vinos de uva prieto picudo y albarín muy agradables y de soberbia relación calidad-precio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Productor 6: Cooperativa La Unión -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/cooperativa-la-union.jpg" alt="Cooperativa La Unión" class="w-full h-full" loading="lazy">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Cooperativa La Unión</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> Montilla, Córdoba
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Aceite, vinos y vinagre</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Cooperativa moderna de gran volumen con almazara y bodega, y excelentes campos de olivos y viñas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Productor 7: Conservas Vega Esla -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/vega-esla.jpg" alt="Conservas Vega Esla" class="w-full h-full" loading="lazy">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Conservas Vega Esla</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> León
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Conservas vegetales</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Los mejores pimientos asados del mercado y otras verduras y salsas en conserva de producción propia y elaboración artesanal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Productor 8: Café El Chícaro -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/cafe-el-chicaro.jpg" alt="Café El Chícaro" class="w-full h-full" loading="lazy">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Café El Chícaro</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> Grandas de Salime, Asturias
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Café de Venezuela</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Café arábica seleccionado de campos familiares en Venezzuela y tostado artesanalmente en Asturias.
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -140,7 +213,7 @@
                     <div>
                         <h4 class="text-xl font-bold text-gray-900 mb-2">Un cliente grande</h4>
                         <p class="text-gray-700">
-                            70 familias + bar + hostelería. Consumo regular y predecible.
+                            70 familias + hostelería. Consumo a medida: regular y predecible o puntual.
                         </p>
                     </div>
                 </div>
@@ -184,7 +257,7 @@
                     <div>
                         <h4 class="text-xl font-bold text-gray-900 mb-2">Proyecto social</h4>
                         <p class="text-gray-700">
-                            No somos una empresa al uso. Somos un grupo que apuesta por un modelo distinto.
+                            No somos una empresa al uso. Somos un proyecto de grupo que apuesta por un modelo distinto.
                         </p>
                     </div>
                 </div>
@@ -195,7 +268,7 @@
                     <div>
                         <h4 class="text-xl font-bold text-gray-900 mb-2">Ayuda web y comunicación</h4>
                         <p class="text-gray-700">
-                            Te echamos una mano con tu presencia digital si lo necesitas.
+                            Te echamos una mano con tu presencia digital si lo necesitas (de la mano de 4tres.com)
                         </p>
                     </div>
                 </div>
@@ -212,7 +285,7 @@
     </section>
 
     <!-- CTA Contacto -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 max-w-4xl text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
                 ¿Hablamos?
@@ -230,5 +303,7 @@
             </p>
         </div>
     </section>
+
+</main>
 
 <?php include 'includes/footer.php'; ?>
