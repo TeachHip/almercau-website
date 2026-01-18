@@ -9,7 +9,7 @@
             Del productor al barrio
         </h1>
         <p class="text-xl md:text-2xl mb-10 font-light leading-relaxed">
-            Asegura calidad. Disfruta sencillez. Comparte vecindad.
+            Calidad, transparencia, trato justo y vecindad.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="#filosofia"
@@ -32,29 +32,45 @@
 <section id="filosofia" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4 max-w-4xl">
         <div class="text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8">Un Proyecto sencillo con mucha Filosofía
-                (y&nbsp;Sabor)</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8">Un Proyecto sencillo<br>
+                con mucha Filosofía y Sabor</h2>
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
                 En AlMercáu sabemos que <strong>otra forma de consumir es posible</strong>. Con organización, cariño y
-                un poco de esfuerzo, conseguimos conectar sin intermediarios los mejores productores con nuestra gente del barrio de Laviada en Gijón.
+                un poco de esfuerzo, conseguimos conectar sin intermediarios los mejores productores de alimentación con
+                nuestra gente del barrio de Laviada en Gijón.
             </p>
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                Un <strong>productor pequeño y conocido</strong>, es alguien que se preocupa de lo que ofrece. Y en
-                AlMercáu nos preocupamos porque llegue en esas mismas condiciones: directamente, en pocos días, sin
-                escalas sospechosas, con el precio justo y con la seguridad de saber que comemos y bebemos máxima
-                calidad.
+                <strong>¿Qué empleamos?</strong> Productos, elaboraciones y trato humano como antiguamente, sin olvidar
+                la tecnología para comunicarnos y para acercar los alimentos en las mejores condiciones. Lo que sería
+                nuestra acepción de 'decrecimiento': lo pequeño es hermoso, lo sostenible, lo mejor de antes y lo mejor
+                de ahora.
             </p>
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                Y si un buen proyecto fuese poco, tienes <strong>2 formas de disfrutarlo</strong>: pasa por nuestro bar
-                y descubre lo poco que se parece a cualquier otro o date de alta en nuestro Grupo de Consumo. En ambos
-                casos la filosofía es la misma y, ¡claro!, sólo con producto de excelente calidad directamente del
-                productor.
+                <strong>¿Cómo lo hacemos?</strong> Sólo trabajamos con productores pequeños o muy pequeños (si los
+                comparamos con las grandes corporaciones y cadenas de alimentación). Estos productores sí que se
+                preocupan por ofrecer lo mejor. Y nosotros lo traemos sin intermediarios para que llegue en esas mismas
+                condiciones: en pocos días, sin escalas sospechosas, con el precio justo y con la seguridad de saber que
+                comemos y bebemos máxima calidad.
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                <strong>¿Por qué?</strong> Porque nos robaron los mercados, y en los supermercados manda el máximo
+                beneficio económico a cambio de productos de muy dudosa calidad, sin trazabilidad y a precios caros y
+                pactados. Porque muchas tiendinas y bares parecen anuncios comerciales de 4 o 5 marcas famosísimas (y de
+                escasa calidad). Porque queremos saber qué consumimos, de dónde viene, cómo se hace y cuánto cuesta de verdad. Porque el
+                trato humano se va perdiendo y aquí, en AlMercáu, lo recuperamos con vecindad y cuidados.
+            </p>
+            <h3 class="text-xl md:text-xl font-bold text-almercau-blue mb-4 mt-10">Lo importante es el producto y las
+                personas</h3>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                El proyecto se materializa en simbiosis entre el Grupo de Consumo -donde las mercantes lo apoyan con
+                cuotas mensuales- y AlMercáu degustación (mundialmente conocido como 'el bar') que se nutre de los mismos productos del grupo, y es donde nos reunimos y
+                donde cualquiera puede pasar a conocernos, tomar algo, llevar algún producto a casa y, si le interesa,
+                darse de alta en el Grupo.
             </p>
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-                AlMercáu, un proyecto de barrio que apuesta por lo mejor de antes y lo mejor de ahora para consumir
-                bien, en armonía. <strong>Sencillez y vecindad</strong>, términos que nos representan.
-                <strong>Excelentes productos y la tranquilidad de hacer las cosas bien</strong>,
-                razones que te convencen.
+                AlMercáu es un proyecto de barrio, de proximidad, que ayuda a consumir bien, disfrutar y tener la
+                conciencia tranquila. Y a hacerlo en armonía, con sencillez y vecindad. Excelentes productos y la
+                tranquilidad de hacer las cosas bien son razones que convencen, ho!
             </p>
         </div>
     </div>
@@ -82,7 +98,7 @@
                         Servimos pedidos quincenales de productos frescos de temporada, pedidos exprés para optimizar el
                         transporte, los mejores básicos de la despensa, excedentes...
                     </p>
-                    <a href="#"
+                    <a href="grupo.php"
                         class="inline-flex items-center gap-2 bg-almercau-blue hover:opacity-80 text-white px-6 py-3 rounded-full font-semibold transition">
                         ¿Quieres saber cómo funciona?
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,20 +112,21 @@
             <!-- Card 2: Degustación -->
             <div id="degustacion"
                 class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition border border-gray-100">
-                <img src="assets/imgs/comidas-y-raciones.jpg" alt="Degustación" class="w-full h-64 md:h-80 object-cover">
+                <img src="assets/imgs/comidas-y-raciones.jpg" alt="Degustación"
+                    class="w-full h-64 md:h-80 object-cover">
                 <div class="p-8 md:p-10">
                     <h3 class="text-2xl md:text-3xl font-bold text-almercau-blue mb-4">
                         AlMercáu Degustación
                     </h3>
                     <p class="text-gray-700 text-lg leading-relaxed mb-6">
                         El bar. Un espacio sencillo con productos únicos y excelentes. Todo directo de productor. Por
-                        eso no hay cocaloca, ni mau, ni dudosos fiambres.
+                        eso no hay cocaloca, ni mau, ni dudosos fiambres. Ni tele, porque venimos a charlar, a estar a gusto sin sobresaltos.
                     </p>
                     <p class="text-gray-700 text-lg leading-relaxed mb-6">
                         Hay cerveza artesana, vinos de bodega, vermuts de premio, sidra selección o limonada
-                        casera. De comida, cerdo de bellota, AOVE seleccionado, la mejor conserva de cercanía...
+                        casera y cosas ricas para picar.
                     </p>
-                    <a href="#"
+                    <a href="degustacion.php"
                         class="inline-flex items-center gap-2 bg-almercau-yellow hover:opacity-80 text-gray-900 px-6 py-3 rounded-full font-semibold transition">
                         Vienes a tomar algo?
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -139,7 +156,7 @@
                     Directo del productor
                 </h3>
                 <p class="text-lg text-gray-700">
-                    Sin intermediarios que encarecen
+                    Decidimos qué consumimos
                 </p>
             </div>
 
@@ -147,10 +164,10 @@
             <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="text-6xl mb-4">✅</div>
                 <h3 class="text-xl md:text-2xl font-bold text-almercau-blue mb-3">
-                    Calidad primera
+                    Calidad excelente
                 </h3>
                 <p class="text-lg text-gray-700">
-                    Trato humano en la selección
+                    De verdad, sin pijaes
                 </p>
             </div>
 
@@ -161,7 +178,7 @@
                     Proyecto de barrio
                 </h3>
                 <p class="text-lg text-gray-700">
-                    Comunidad, no solo comercio
+                    Va de disfrutar y compartir
                 </p>
             </div>
         </div>
@@ -227,8 +244,8 @@
             </div>
 
             <!-- Map Column -->
-            <div
-                class="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96 md:h-full min-h-[400px] flex items-center justify-center" data-aos="fade-right" data-aos-delay="200">
+            <div class="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96 md:h-full min-h-[400px] flex items-center justify-center"
+                data-aos="fade-right" data-aos-delay="200">
                 <div class="text-center text-gray-600">
                     <svg class="w-16 h-16 mx-auto mb-4 text-almercau-blue" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24">
