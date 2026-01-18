@@ -1,6 +1,7 @@
 <?php
-$pageTitle = 'Contacto y Horario - Laviada, Xixón | AlMercáu';
-$pageDescription = 'Visítanos en c. Luanco 5, Laviada, Gijón. Horarios, ubicación y contacto del grupo de consumo y bar AlMercáu. Detrás de los ALSAs. ☎ 611 183 123';
+require_once 'includes/site-config.php';
+$pageTitle = $pageTitles['contacto'];
+$pageDescription = $pageDescriptions['contacto'];
 include 'includes/header.php';
 ?>
 
@@ -28,7 +29,7 @@ include 'includes/header.php';
 
                 <div class="grid md:grid-cols-2 gap-10 items-start">
                     <!-- Address Info -->
-                    <div class="space-y-6">
+                    <address class="space-y-6 not-italic">
                         <div class="p-6">
                             <div class="flex items-start gap-4">
                                 <svg class="w-8 h-8 text-almercau-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +51,7 @@ include 'includes/header.php';
                                 📍 Detrás de los ALSAs
                             </p>
                         </div>
-                    </div>
+                    </address>
 
                     <!-- Map -->
                     <div class="bg-gray-200 rounded-xl overflow-hidden shadow-lg h-80 flex items-center justify-center">

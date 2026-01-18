@@ -1,22 +1,38 @@
+<?php
+// Load centralized site configuration
+if (!isset($defaultTitle)) {
+    require_once __DIR__ . '/site-config.php';
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo isset($pageTitle) ? $pageTitle : 'AlMercáu - Grupo de consumo en Xixón'; ?></title>
-    <meta name="description" content="Grupo de consumo en Laviada, Gijón. Nos organizamos y negociamos compras al por mayor para conseguir alimentos de calidad TOP a precios de súper.">
+    <title><?php echo isset($pageTitle) ? $pageTitle : $defaultTitle; ?></title>
+    <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : $defaultDescription; ?>">
     <meta name="theme-color" content="#196b8e">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?php echo $siteUrl . (isset($_SERVER['REQUEST_URI']) ? htmlspecialchars($_SERVER['REQUEST_URI']) : ''); ?>">
 
     <!-- Favicons -->
-    <link rel="icon" href="assets/imgs/logo_almercau2.png">
-    <link rel="apple-touch-icon" href="assets/imgs/logo_almercau2.png">
+    <link rel="icon" href="<?php echo $logoPath; ?>">
+    <link rel="apple-touch-icon" href="<?php echo $logoPath; ?>">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://almercau.org">
-    <meta property="og:title" content="AlMercáu - Grupo de consumo en Xixón. Calidad TOP a precio de súper">
-    <meta property="og:description" content="Grupo de consumo en Laviada, Gijón. Nos organizamos y negociamos compras al por mayor para conseguir mejores alimentos. No hay tienda.">
-    <meta property="og:image" content="https://almercau.org/assets/imgs/logo_almercau2.png">
+    <meta property="og:url" content="<?php echo $siteUrl . (isset($_SERVER['REQUEST_URI']) ? htmlspecialchars($_SERVER['REQUEST_URI']) : ''); ?>">
+    <meta property="og:title" content="<?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : htmlspecialchars($defaultTitle); ?>">
+    <meta property="og:description" content="<?php echo isset($pageDescription) ? htmlspecialchars($pageDescription) : htmlspecialchars($defaultDescription); ?>">
+    <meta property="og:image" content="<?php echo $defaultOgImage; ?>">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : htmlspecialchars($defaultTitle); ?>">
+    <meta name="twitter:description" content="<?php echo isset($pageDescription) ? htmlspecialchars($pageDescription) : htmlspecialchars($defaultDescription); ?>">
+    <meta name="twitter:image" content="<?php echo $defaultOgImage; ?>">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -86,6 +102,67 @@
             /* Content area styles */
         }
     </style>
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AlMercáu",
+      "description": "Grupo de consumo y bar de degustación en Laviada, Gijón. Conectamos productores locales con consumidores.",
+      "image": "https://almercau.org/assets/imgs/almercau.png",
+      "url": "https://almercau.org",
+      "@id": "https://almercau.org",
+      "telephone": "+34611183123",
+      "email": "info@almercau.org",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "c. Luanco, 5",
+        "addressLocality": "Gijón",
+        "addressRegion": "Asturias",
+        "postalCode": "33207",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "43.53831927555067",
+        "longitude": "-5.668129033145986"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Wednesday",
+          "opens": "17:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Thursday", "Friday"],
+          "opens": "11:00",
+          "closes": "14:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Thursday", "Friday"],
+          "opens": "17:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "11:00",
+          "closes": "13:00"
+        }
+      ],
+      "priceRange": "€",
+      "servesCuisine": "Spanish",
+      "sameAs": [
+        "https://www.instagram.com/almercau/",
+        "https://www.facebook.com/almercau",
+        "https://bsky.app/profile/almercau.org"
+      ]
+    }
+    </script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -105,7 +182,7 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="index.php" class="flex items-center">
-                        <img src="assets/imgs/logo_almercau2.png" alt="AlMercáu" class="h-12 md:h-14">
+                        <img src="assets/imgs/almercau.png" alt="AlMercáu" class="h-12 md:h-14">
                     </a>
                 </div>
 

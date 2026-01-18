@@ -1,7 +1,8 @@
-<?php 
-$pageTitle = 'AlMercáu - Del productor al barrio | Grupo de consumo y bar en Gijón';
-$pageDescription = 'Del productor al barrio en Laviada, Gijón. Grupo de consumo y bar de degustación con productos artesanos de calidad. Transparencia, trato justo y vecindad.';
-include 'includes/header.php'; 
+<?php
+require_once 'includes/site-config.php';
+$pageTitle = $pageTitles['index'];
+$pageDescription = $pageDescriptions['index'];
+include 'includes/header.php';
 ?>
 
 <!-- Hero Section -->
