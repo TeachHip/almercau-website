@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow development/work-in-progress pages (if present)
+Disallow: /_no/
+
+# Sitemap location
+Sitemap: https://almercau.org/sitemap.xml

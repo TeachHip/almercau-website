@@ -1,5 +1,6 @@
 <?php 
 $pageTitle = 'Nuestros Productores - Pequeños artesanos de calidad | AlMercáu';
+$pageDescription = 'Conoce a nuestros productores artesanos: miel, setas, cerveza, quesos, vinos, conservas y más. Pequeños productores de calidad excepcional en AlMercáu.';
 include 'includes/header.php'; 
 ?>
 

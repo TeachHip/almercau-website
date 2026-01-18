@@ -124,3 +124,73 @@ a[href*="whatsapp.com"]:hover,
 html {
   scroll-behavior: smooth;
 }
+
+/* 8. KEYBOARD FOCUS STYLES (accessibility) */
+/* Show clear focus indicator for keyboard users only */
+
+/* Links */
+a:focus-visible {
+  outline: 3px solid #196b8e;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Buttons */
+button:focus-visible,
+.btn:focus-visible,
+a[class*="btn"]:focus-visible,
+a[class*="rounded-full"]:focus-visible {
+  outline: 3px solid #196b8e;
+  outline-offset: 3px;
+}
+
+/* Navigation links - special treatment */
+nav a:focus-visible {
+  outline: 3px solid #196b8e;
+  outline-offset: 2px;
+  background-color: rgba(25, 107, 142, 0.1);
+}
+
+/* Social media icon links */
+a[aria-label]:focus-visible {
+  outline: 3px solid #f7ec14;
+  outline-offset: 3px;
+}
+
+/* Skip link (enhance existing focus) */
+.skip-link:focus {
+  outline: 3px solid #f7ec14;
+  outline-offset: -3px;
+}
+
+/* 9. RESPECT REDUCED MOTION PREFERENCE (accessibility) */
+@media (prefers-reduced-motion: reduce) {
+  
+  /* Disable all animations and transitions */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Disable AOS animations specifically */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  
+  /* Disable hover effects that use transforms */
+  button:hover,
+  .btn:hover,
+  a:hover {
+    transform: none !important;
+  }
+  
+  /* Keep focus indicators (important for a11y) */
+  *:focus-visible {
+    transition: outline 0.01ms !important;
+  }
+}

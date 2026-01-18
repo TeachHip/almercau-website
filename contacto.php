@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Contacto y Horario - Laviada, Xixón | AlMercáu';
+$pageDescription = 'Visítanos en c. Luanco 5, Laviada, Gijón. Horarios, ubicación y contacto del grupo de consumo y bar AlMercáu. Detrás de los ALSAs. ☎ 611 183 123';
 include 'includes/header.php';
 ?>
 

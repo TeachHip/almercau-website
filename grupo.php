@@ -1,5 +1,6 @@
 <?php 
 $pageTitle = 'Grupo de Consumo - Consumo consciente y responsable | AlMercáu Gijón';
+$pageDescription = 'Únete al grupo de consumo AlMercáu en Gijón. Compras colectivas de alimentos de calidad TOP a precios justos. No somos tienda, somos grupo. ¡Hazte mercante!';
 include 'includes/header.php'; 
 ?>
 

@@ -1,11 +1,12 @@
 <?php 
 $pageTitle = 'AlMercáu - Del productor al barrio | Grupo de consumo y bar en Gijón';
+$pageDescription = 'Del productor al barrio en Laviada, Gijón. Grupo de consumo y bar de degustación con productos artesanos de calidad. Transparencia, trato justo y vecindad.';
 include 'includes/header.php'; 
 ?>
 
 <!-- Hero Section -->
 <section id="main-content" class="relative h-screen min-h-[600px] flex items-center justify-center"
-    style="background-image: url('gridimages/mesa-sidra-conservas.jpg'); background-size: cover; background-position: center;">
+    style="background-image: url('assets/imgs/mesa-sidra-conservas.jpg'); background-size: cover; background-position: center;">
     <div class="hero-gradient absolute inset-0"></div>
     <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">

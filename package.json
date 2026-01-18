@@ -1,0 +1,27 @@
+{
+  "name": "2025_12-alm_web-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/tailwind-source.css -o ./assets/css/tailwind-built.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i ./assets/css/tailwind-source.css -o ./assets/css/tailwind-built.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeachHip/almercau-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TeachHip/almercau-website/issues"
+  },
+  "homepage": "https://github.com/TeachHip/almercau-website#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}

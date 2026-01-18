@@ -1,5 +1,6 @@
 <?php 
 $pageTitle = 'Bar degustación - Aperitivos de calidad | AlMercáu Gijón';
+$pageDescription = 'Bar de degustación en Laviada, Gijón. Vinos, cervezas artesanas, conservas y tapas de calidad. Abierto a todo el mundo. Prueba, comparte y disfruta.';
 include 'includes/header.php'; 
 ?>
 
