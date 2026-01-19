@@ -2,7 +2,7 @@
 require_once 'includes/site-config.php';
 $pageTitle = $pageTitles['grupo'];
 $pageDescription = $pageDescriptions['grupo'];
-include 'includes/header.php'; 
+include 'includes/header.php';
 ?>
 
     <!-- Hero Section -->
@@ -27,7 +27,7 @@ include 'includes/header.php';
                 Qué es el grupo
             </h2>
 
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="grid md:grid-cols-2 gap-12">
                 <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
                     <p>
                         Un grupo de consumo es, en esencia, un grupo de personas que se organiza para comprar junta de forma más ventajosa. La ventaja, aparte del precio, es que <strong>decides qué quieres</strong> (y no lo hace el súper por ti).
@@ -36,15 +36,15 @@ include 'includes/header.php';
                         Hay grupos de consumo eco, otros vegetarianos... En la mayoría hay una cesta de productos establecidos. En muchos hay que colaborar en las tareas de transporte, reparto... En AlMercáu optamos por lo más cómodo: <strong>sólo tienes que pedir y recoger</strong>. No hay compromiso de pedido mínimo, tenemos productos eco, vegetarianos y veganos, pero no exclusivamente, y no tienes por qué participar... aunque si colaboras es mucho más interesante y ayudas a mejorar.
                     </p>
                     <p>
-                        En catálogo intentamos tener algunos productos básicos como legumbres, aceite, conservas (campo y mar), café o miel y, cada 2 semanas frescos como patatas, huevos y alguna verdura y fruta de temporada. Además, al compartir los productos con el bar, también tienes vinos, cervezas y vermuts exclusivos. <strong>TODO directo del productor y de calidad excepcional</strong>. Para que comer bien cada día sea más fácil.
+                        En catálogo intentamos tener algunos productos básicos como legumbres, aceite, conservas (campo y mar), café o miel y, cada 2 semanas frescos como patatas, huevos y alguna verdura y fruta de temporada. Además, al compartir los productos con el bar, también tienes vinos, cervezas y vermuts exclusivos. <strong>TODO directo del productor y de calidad excepcional</strong>. Para las mercantes comer bien cada día es más fácil.
                     </p>
                     <p>
                         No menos importantes son las actividades que organizamos (en el bar o fuera) y la pertenencia al grupo que, no está mal decirlo, se compone de personas estupendas. A partir de aquí sólo queda pensar qué más podemos hacer.
                     </p>
                 </div>
 
-                <div class="bg-gray-200 rounded-2xl h-80 flex items-center justify-center overflow-hidden">
-                    <img src="assets/imgs/IMG_20250528_191228.jpg" alt="Mercantes recogiendo pedidos" class="w-full h-full object-cover" loading="lazy">
+                <div class="bg-gray-200 rounded-2xl h-80 flex items-start justify-center overflow-hidden">
+                    <img src="assets/imgs/IMG_20250528_191228.jpg" alt="Presentación de productor para mercantes" class="w-full h-full object-cover self-start" loading="lazy">
                 </div>
             </div>
         </div>

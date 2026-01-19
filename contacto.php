@@ -15,100 +15,17 @@ include 'includes/header.php';
         </div>
     </section>
 
-<main role="main">
+<main role="main" id="main">
+
 
     <!-- Main Content -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-5xl">
+    <?php
+    $showWhatsappBtn = false;
+    $dondeBg = 'bg-gray-50';
+    include __DIR__ . '/includes/section-donde-estamos.php';
+    ?>
 
-            <!-- Dónde estamos -->
-            <div class="mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8 text-center">
-                    Dónde estamos
-                </h2>
 
-                <div class="grid md:grid-cols-2 gap-10 items-start">
-                    <!-- Address Info -->
-                    <address class="space-y-6 not-italic">
-                        <div class="p-6">
-                            <div class="flex items-start gap-4">
-                                <svg class="w-8 h-8 text-almercau-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                                <div>
-                                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Dirección</h3>
-                                    <p class="text-lg text-gray-700 leading-relaxed">
-                                        c/ Luanco, 5 - Laviada<br>
-                                        Xixón, Asturias
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6">
-                            <p class="text-lg text-gray-800 font-medium">
-                                📍 Detrás de los ALSAs
-                            </p>
-                        </div>
-                    </address>
-
-                    <!-- Map -->
-                    <div class="bg-gray-200 rounded-xl overflow-hidden shadow-lg h-80 flex items-center justify-center">
-                        <div class="text-center text-gray-600 p-6">
-                            <svg class="w-16 h-16 mx-auto mb-4 text-almercau-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
-                            </svg>
-                            <p class="text-lg font-medium">Google Maps</p>
-                            <p class="text-sm mt-2">(Integrar mapa aquí)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Horario -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">
-                Horario
-            </h2>
-
-            <div class="max-w-2xl mx-auto space-y-4">
-                    <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-almercau-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-lg font-semibold text-gray-900">Miércoles</span>
-                        </div>
-                        <span class="text-lg text-gray-700">17:00 - 21:00h</span>
-                    </div>
-
-                    <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-almercau-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-lg font-semibold text-gray-900">Jueves - Viernes</span>
-                        </div>
-                        <span class="text-lg text-gray-700">11:00 - 14:30h / 17:00 - 21:00h</span>
-                    </div>
-
-                    <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-almercau-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="text-lg font-semibold text-gray-900">Sábado</span>
-                        </div>
-                        <span class="text-lg text-gray-700">11:00 - 13:00h</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contacto -->
     <section class="py-20 bg-white">
@@ -116,7 +33,7 @@ include 'includes/header.php';
             <!-- Contacto -->
             <div>
                 <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-8 text-center">
-                    Contacta con nosotros
+                    Cuéntanos, comenta, pregunta
                 </h2>
 
                 <div class="max-w-2xl mx-auto space-y-6">

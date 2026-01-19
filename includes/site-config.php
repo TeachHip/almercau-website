@@ -45,6 +45,10 @@ $whatsappUrl = 'https://wa.me/34611183123';
 $logoPath = 'assets/imgs/almercau.png';
 $defaultOgImage = 'https://almercau.org/assets/imgs/almercau.png';
 
+// Shop Coordinates (for map)
+$shopLat = 43.53827092416648;
+$shopLng = -5.668128001842376;
+
 // Opening Hours
 $openingHours = [
     'wednesday' => '17:00 - 21:00h',

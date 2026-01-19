@@ -112,63 +112,67 @@ if (!isset($defaultTitle)) {
 
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "AlMercáu",
-      "description": "Grupo de consumo y bar de degustación en Laviada, Gijón. Conectamos productores locales con consumidores.",
-      "image": "https://almercau.org/assets/imgs/almercau.png",
-      "url": "https://almercau.org",
-      "@id": "https://almercau.org",
-      "telephone": "+34611183123",
-      "email": "info@almercau.org",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "c. Luanco, 5",
-        "addressLocality": "Gijón",
-        "addressRegion": "Asturias",
-        "postalCode": "33207",
-        "addressCountry": "ES"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "43.53831927555067",
-        "longitude": "-5.668129033145986"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Wednesday",
-          "opens": "17:00",
-          "closes": "21:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Thursday", "Friday"],
-          "opens": "11:00",
-          "closes": "14:30"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Thursday", "Friday"],
-          "opens": "17:00",
-          "closes": "21:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "11:00",
-          "closes": "13:00"
-        }
-      ],
-      "priceRange": "€",
-      "servesCuisine": "Spanish",
-      "sameAs": [
-        "https://www.instagram.com/almercau/",
-        "https://www.facebook.com/almercau",
-        "https://bsky.app/profile/almercau.org"
-      ]
-    }
+        <?php
+        // Build JSON-LD schema using site-config.php variables
+        $schema = [
+            "@context" => "https://schema.org",
+            "@type" => "LocalBusiness",
+            "name" => $siteName,
+            "description" => $defaultDescription,
+            "image" => $defaultOgImage,
+            "url" => $siteUrl,
+            "@id" => $siteUrl,
+            "telephone" => $businessPhone,
+            "email" => $businessEmail,
+            "address" => [
+                "@type" => "PostalAddress",
+                "streetAddress" => $businessAddress,
+                "addressLocality" => $businessCity,
+                "addressRegion" => "Asturias",
+                "postalCode" => $businessPostalCode,
+                "addressCountry" => "ES"
+            ],
+            "geo" => [
+                "@type" => "GeoCoordinates",
+                "latitude" => $shopLat,
+                "longitude" => $shopLng
+            ],
+            "openingHoursSpecification" => [
+                [
+                    "@type" => "OpeningHoursSpecification",
+                    "dayOfWeek" => "Wednesday",
+                    "opens" => "17:00",
+                    "closes" => "21:00"
+                ],
+                [
+                    "@type" => "OpeningHoursSpecification",
+                    "dayOfWeek" => ["Thursday", "Friday"],
+                    "opens" => "11:00",
+                    "closes" => "14:30"
+                ],
+                [
+                    "@type" => "OpeningHoursSpecification",
+                    "dayOfWeek" => ["Thursday", "Friday"],
+                    "opens" => "17:00",
+                    "closes" => "21:00"
+                ],
+                [
+                    "@type" => "OpeningHoursSpecification",
+                    "dayOfWeek" => "Saturday",
+                    "opens" => "11:00",
+                    "closes" => "13:00"
+                ]
+            ],
+            "priceRange" => "€",
+            "servesCuisine" => "Spanish",
+            "sameAs" => array_filter([
+                $instagramUrl ?? null,
+                $facebookUrl ?? null,
+                "https://bsky.app/profile/almercau.org"
+            ])
+        ];
+        echo json_encode($schema, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT);
+        ?>
     </script>
 </head>
 <body class="bg-white text-gray-800">
@@ -190,6 +194,7 @@ if (!isset($defaultTitle)) {
                 <div class="flex items-center">
                     <a href="index.php" class="flex items-center">
                         <img src="assets/imgs/almercau.png" alt="AlMercáu" class="h-12 md:h-14">
+                        <span class="hidden lg:inline-block text-2xl font-extrabold text-almercau-blue tracking-tight whitespace-nowrap ml-3">AlMercáu</span>
                     </a>
                 </div>
 
@@ -237,7 +242,10 @@ if (!isset($defaultTitle)) {
                 </div>
 
                 <!-- Hamburger Menu Button (Mobile) -->
-                <button @click="mobileMenuOpen = !mobileMenuOpen" class="lg:hidden text-gray-700 focus:outline-none">
+                <div class="flex-1 flex flex-col items-center lg:hidden">
+                    <span class="block text-2xl font-extrabold text-almercau-blue tracking-tight mb-1">AlMercáu</span>
+                </div>
+                <button @click="mobileMenuOpen = !mobileMenuOpen" class="lg:hidden text-almercau-blue focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -254,7 +262,7 @@ if (!isset($defaultTitle)) {
                  x-transition:leave-start="opacity-100 transform translate-y-0"
                  x-transition:leave-end="opacity-0 transform -translate-y-2"
                  class="lg:hidden mt-4 pb-4">
-                <div class="flex flex-col space-y-3">
+                <div class="flex flex-col items-center space-y-3">
                     <?php if($current_page == 'index.php'): ?>
                         <span class="text-almercau-blue font-bold underline py-2">Home</span>
                     <?php else: ?>

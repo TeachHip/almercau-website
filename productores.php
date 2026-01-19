@@ -6,14 +6,14 @@ include 'includes/header.php';
 ?>
 
     <!-- Hero Section -->
-    <section id="main-content" class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/con-los-productores.png'); background-size: cover; background-position: center;">
+    <section id="main-content" class="relative h-96 md:h-[500px] flex items-center justify-center" style="background-image: url('assets/imgs/con-los-productores.jpg'); background-size: cover; background-position: center;">
         <div class="hero-gradient absolute inset-0"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">
                 Productores
             </h1>
             <p class="text-2xl md:text-3xl font-light">
-                Gracias a quienes hacen esto posible
+                Gracias a quiénes hacen esto posible
             </p>
         </div>
     </section>
@@ -34,8 +34,8 @@ include 'includes/header.php';
                 <p>
                     Por muy moderno que se esté volviendo todo seguimos, como desde hace muchos siglos, dependiendo de quienes cultivan, crían y elaboran los alimentos que consumimos. No es una frase hecha. Sin ellos no comemos. Ahora, hay productores masivos, industriales, que venden a grandes cadenas y supermercados y cuyos productos y medios de producción son, cuanto menos, dudosos (para la salud, el medio ambiente y la sociedad en general). Cuanto más, perjudiciales.
                 </p>
-                <p>Es por ello que el proyecto de AlMercáu apuesta por pequeños productores de proximidad, responsables, que garantizan calidad, sostenibilidad y un trato justo. Así consumimos y comemos bien (¡muy bien!) y colaboramos con el tejido productivo, el mantenimiento de puestos de trabajo y una sociedad con algo de sentido común.</p>
-                <p>Todos nuestros productores son ejemplares en cuanto al producto que ofrecen y el trato que mantenemos. Cuando no es así (aún no ocurrió) buscamos uno nuevo. Capacidad de elección se llama. Y como buenos profesionales no dejan de enseñarnos. Con el tiempo algunos pasaron a ser parte esencial de AlMercáu. En ese caso les concedemos nuestro particular etiquetado de garantía: Excelente producto. Productores excelentes. Y, tenlo claro, tiene más valor que el FIFA de la paz.</p>
+                <p>Es por ello que el proyecto de AlMercáu apuesta por <strong>pequeños productores de proximidad, responsables, que garantizan calidad, sostenibilidad y un trato justo</strong>. Así consumimos y comemos bien (¡muy bien!) y colaboramos con el tejido productivo, el mantenimiento de puestos de trabajo y una sociedad con algo de sentido común.</p>
+                <p>Todos nuestros productores son ejemplares en cuanto al producto que ofrecen y el trato que mantenemos. Cuando no es así buscamos uno nuevo. Capacidad de elección se llama. Y como buenos profesionales no dejan de enseñarnos. Con el tiempo algunos pasaron a ser parte esencial de AlMercáu. En ese caso les concedemos nuestro particular etiquetado de garantía: <strong>Excelente producto. Productores excelentes</strong>. Y, tenlo claro, tiene más valor que el FIFA de la paz.</p>
             </div>
         </div>
     </section>
@@ -103,24 +103,7 @@ include 'includes/header.php';
                     </div>
                 </div>
 
-                <!-- Productor 4: Granja La Amistad -->
-                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
-                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
-                        <img src="assets/imgs/productores-excelentes/huevos-la-amistad.jpg" alt="Granja La Amistad" class="w-full h-full" loading="lazy">
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Granja La Amistad</h3>
-                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
-                            <span>📍</span> Asturias
-                        </p>
-                        <p class="text-almercau-blue font-semibold text-sm mb-2">Huevos</p>
-                        <p class="text-gray-700 text-xs leading-relaxed">
-                            Gallinas felices, huevos de calidad.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Productor 5: Bodega Solotero -->
+                <!-- Productor 4: Bodega Solotero -->
                 <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
                     <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
                         <img src="assets/imgs/productores-excelentes/bodega-solotero.jpg" alt="Bodega Solotero" class="w-full h-full" loading="lazy">
@@ -133,6 +116,23 @@ include 'includes/header.php';
                         <p class="text-almercau-blue font-semibold text-sm mb-2">Vinos</p>
                         <p class="text-gray-700 text-xs leading-relaxed">
                             Vinos de uva prieto picudo y albarín muy agradables y de soberbia relación calidad-precio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Productor 5: Granja La Amistad -->
+                <div class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition flex gap-4 items-start">
+                    <div class="w-[120px] h-[120px] bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        <img src="assets/imgs/productores-excelentes/huevos-la-amistad.jpg" alt="Granja La Amistad" class="w-full h-full" loading="lazy">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Granja La Amistad</h3>
+                        <p class="text-xs text-gray-600 mb-2 flex items-center gap-1">
+                            <span>📍</span> Asturias
+                        </p>
+                        <p class="text-almercau-blue font-semibold text-sm mb-2">Huevos</p>
+                        <p class="text-gray-700 text-xs leading-relaxed">
+                            Gallinas felices, huevos de calidad.
                         </p>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ include 'includes/header.php';
                         </p>
                         <p class="text-almercau-blue font-semibold text-sm mb-2">Conservas vegetales</p>
                         <p class="text-gray-700 text-xs leading-relaxed">
-                            Los mejores pimientos asados del mercado y otras verduras y salsas en conserva de producción propia y elaboración artesanal.
+                            Los mejores pimientos asados del mercado. Verduras y salsas en conserva de producción propia y elaboración artesanal.
                         </p>
                     </div>
                 </div>
@@ -215,7 +215,7 @@ include 'includes/header.php';
                     <div>
                         <h4 class="text-xl font-bold text-gray-900 mb-2">Un cliente grande</h4>
                         <p class="text-gray-700">
-                            70 familias + hostelería. Consumo a medida: regular y predecible o puntual.
+                            70 familias (creciendo) + hostelería. Consumo a medida: regular y predecible, o puntual.
                         </p>
                     </div>
                 </div>

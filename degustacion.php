@@ -27,16 +27,17 @@ include 'includes/header.php';
                 AlMercáu degustación: el bar
             </h2>
 
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="grid md:grid-cols-2 gap-12">
                 <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
                     <p>
                         <strong>AlMercáu degustación es un bar abierto a todo el mundo.</strong> No hace falta ser mercante para entrar, tomar algo y disfrutar.
                     </p>
                     <p>
-                        Todo lo que servimos viene directo del productor. Los mismos productos de excepcional calidad del Grupo de Consumo, están disponibles en barra para que los pruebes. Así, además de disfrutarlos, puedes decidir llevártelo a casa o darte de alta en el grupo.
+                        <strong>Todo lo que servimos viene directo del productor</strong>. Los mismos productos de excepcional calidad del Grupo de Consumo, están disponibles en barra para que los pruebes. Así, además de disfrutarlos, puedes decidir llevártelo a casa o darte de alta en el grupo.
                     </p>
-                    <p>Para beber tenemos vinos únicos de bodegas seleccionadas, cerveza asturiana artesana pero no estrambótica, vermuts premiados, sidra selección y limonada casera. Siempre acompañado de una tapina o pinchín, con cosa buena. Puedes venir varias veces o apuntarte a alguna cata para probarlo todo.</p>
-                    <p>Para comer hay, fundamentalmente, lateo, embutido ibérico de bellota y quesos. Eventualmente ensaladas y guisos con patatas, setas shiitake y otros productos frescos que nos van llegando. Si tenemos tiempo, reservas o estamos inspirados, también innovamos. Pero que sepas que no entran 'productos de súper', todo son combinaciones con nuestros productos, incluido el AOVE especial de Córdoba que es el único aceite que se usa para todo.</p>
+                    <p><strong>Para beber</strong> tenemos vinos únicos de bodegas seleccionadas, cerveza asturiana artesana pero no estrambótica, vermuts premiados, sidra selección y limonada casera. Siempre acompañado de una tapina o pinchín, con cosa buena. Puedes venir varias veces o apuntarte a alguna cata para probarlo todo.</p>
+                    <p><strong>Para comer</strong> hay, fundamentalmente, lateo, embutido ibérico de bellota y quesos. Eventualmente ensaladas y guisos con patatas, setas shiitake y otros productos frescos que nos van llegando. Si tenemos tiempo, reservas o estamos inspirados, también innovamos. Pero que sepas que no entran 'productos de súper', todo son combinaciones con nuestros productos, incluido el AOVE especial de Córdoba que es el único aceite que se usa para todo.</p>
+                    <p><strong>Y no, no hay cocaloca, ni mau, ni riojas, ni nestís, ni biozumos de plástico...</strong> Ni nada anunciado en TV, ni de los que financian guerras, forman monopolios o negocian con ministros. Ni nada que hace que todos los bares tengan lo mismo. Aquí toca preguntar qué hay y pensar qué quieres. Y descubrir y aprender. Por eso, supongo, hablamos tan a menudo de consumo y alimentación. De economía y salud. Te aseguro que tras un par de visitas todo es más sencillo... y divertido.</p>
                     <p>
                         Por lo demás se trata de un espacio tranquilo, sin pretensiones, donde además de la calidad de lo que servimos, prima la atención, el buen trato y el ambiente distendido para charlar entre amigos.
                     </p>
@@ -46,7 +47,7 @@ include 'includes/header.php';
                 </div>
 
                 <div class="rounded-2xl h-80 overflow-hidden">
-                    <img src="assets/imgs/vermut-jamon.jpg" alt="Interior bar AlMercáu" class="w-full h-full object-cover" loading="lazy">
+                    <img src="assets/imgs/vermut-jamon.jpg" alt="Interior bar AlMercáu" class="w-full h-full object-cover self-start" loading="lazy">
                 </div>
             </div>
         </div>
@@ -246,7 +247,7 @@ include 'includes/header.php';
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="contacto.php" class="inline-flex items-center gap-3 bg-almercau-yellow hover:opacity-80 text-gray-900 px-10 py-5 rounded-full font-bold text-xl transition transform hover:scale-105 shadow-lg">
+                <a href="contacto.php#main" class="inline-flex items-center gap-3 bg-almercau-yellow hover:opacity-80 text-gray-900 px-10 py-5 rounded-full font-bold text-xl transition transform hover:scale-105 shadow-lg">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
