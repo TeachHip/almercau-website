@@ -1,10 +1,11 @@
+
 <!-- Footer -->
-    <footer class="bg-almercau-blue text-white py-12 border-t border-white">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-start mb-8">
+    <footer class="bg-almercau-blue text-white pt-6 pb-3 border-t border-white">
+        <div class="container mx-auto px-2">
+            <div class="flex justify-between items-start mb-4">
 
                 <!-- Brand Column with Logo -->
-                <div class="max-w-lg flex items-center gap-8">
+                <div class="max-w-lg flex items-center gap-4">
                     <img src="assets/imgs/almercau.png" alt="AlMercáu logo" class="h-28 w-auto object-contain select-none" style="max-height:6rem;transition:none;">
                     <div>
                         <h3 class="text-2xl font-bold text-almercau-yellow mb-2">AlMercáu</h3>
@@ -36,11 +37,24 @@
             </div>
 
             <!-- Copyright -->
-            <div class="border-t border-white border-opacity-20 pt-8 text-center text-gray-200 text-sm">
+            <div class="border-t border-white border-opacity-20 pt-3 text-center text-gray-200 text-sm">
                 <p>&copy; 2026 AlMercáu. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
+
+<!-- Second footer: Familia logos, horizontal and centered, below main footer -->
+<footer class="w-full bg-white shadow pt-3 flex flex-col items-center">
+    <div class="flex flex-row justify-center items-center gap-2 md:gap-4">
+            <a href="https://asturtur.com/" target="ATTrrss"><img src="assets/imgs/familia/asturtur-familia.png" alt="Asturtur" class="h-16 w-auto" /></a>
+            <a href="https://4tres.com/" target="ATTrrss"><img src="assets/imgs/familia/4tres-web-repair-familia.png" alt="4tres Web Repair" class="h-16 w-auto" /></a>
+            <a href="https://www.4tres.com/teachhip.php" target="ATTrrss"><img src="assets/imgs/familia/teachhip-familia.png" alt="Teachhip" class="h-16 w-auto" /></a>
+            <a href="https://almercau.org/" target="ATTrrss"><img src="assets/imgs/familia/almercau-familia.png" alt="Almercáu" class="h-16 w-auto" /></a>
+    </div>
+    <div id="lema-familia" class="w-full text-center bg-almercau-blue text-white mt-2 py-1">
+        <small>La familia - Descubre, comparte, disfruta</small>
+    </div>
+</footer>
 
     <!-- AOS (Animate On Scroll) JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
