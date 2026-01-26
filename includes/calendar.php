@@ -98,16 +98,17 @@ function renderMonthHTML($year, $month, $eventsByDate){
             $dayTopClass = ($isWeekend || $isHoliday) ? 'text-red-500' : 'text-gray-800';
             $bgClass = (in_array((int)$weekday, [1,2,7])) ? 'bg-gray-100' : '';
             $dayContent = '<span class="' . $dayTopClass . ' text-sm font-semibold">' . h($d) . '</span>';
+            $dots = '';
             if(count($evs)){
                 $i = 0;
                 foreach(array_slice($evs, 0, 3) as $ev){
                     $labelId = $ev['labelId'] ?? null;
                     $color = ($labelId && isset($legendById[$labelId]['color'])) ? h($legendById[$labelId]['color']) : '#F59E0B';
                     $title = (isset($ev['time']) ? $ev['time'].' - ' : '') . ($ev['title'] ?? '');
-                    $dayContent .= '<span class="inline-block align-middle ml-1 w-2.5 h-2.5 rounded-full" style="background:' . $color . '" title="' . h($title) . '"></span>';
+                    $dots .= '<span class="inline-block w-2.5 h-2.5 rounded-full flex-shrink-0 flex-grow-0 border-2 border-white box-content" style="background:' . $color . ';margin-left:2px;" title="' . h($title) . '"></span>';
                     $i++;
                 }
-                if(count($evs) > 3) $dayContent .= '<span class="text-xs text-gray-600 ml-1">+' . (count($evs)-3) . '</span>';
+                if(count($evs) > 3) $dots .= '<span class="text-xs text-gray-600 ml-1">+' . (count($evs)-3) . '</span>';
             }
             // Half-cell overlays for Wed (top half) and Sat (bottom half)
             $halfOverlay = '';
@@ -133,7 +134,8 @@ function renderMonthHTML($year, $month, $eventsByDate){
             }
             $html[] = '<div class="border rounded day-cell p-3 flex flex-col justify-between ' . $bgClass . ' ' . $closureClass . ' relative">'
                 . $overlayDiv
-                . '<div class="daycell-content" style="position:relative;z-index:2;display:flex;align-items:center;">' . $dayContent . '</div>'
+                . ($dots ? '<span class="absolute top-0.5 right-0.5 flex flex-row z-20 space-x-0.5 pointer-events-none">' . $dots . '</span>' : '')
+                . '<div class="daycell-content" style="position:relative;z-index:10;display:flex;align-items:center;">' . $dayContent . '</div>'
                 . '</div>';
     }
     $totalCells = $startIndex + $lastDay;
@@ -173,7 +175,7 @@ foreach($legendLabels as $lbl) {
 </div>
 <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
     <aside id="legendArea" class="md:col-span-1">
-        <h3 class="text-lg font-medium mb-2">Legend</h3>
+        <h3 class="text-lg font-medium mb-2">Leyenda</h3>
         <div id="legend" class="mt-2 flex flex-row flex-wrap gap-x-6 gap-y-2 text-sm text-gray-700">
             <?php foreach($types as $k => $t): ?>
                 <span class="flex items-center gap-2 mb-2">
@@ -184,7 +186,7 @@ foreach($legendLabels as $lbl) {
         </div>
     </aside>
     <div id="listArea" class="md:col-span-1">
-        <h3 class="text-lg font-medium mb-2">Upcoming events</h3>
+        <h3 class="text-lg font-medium mb-2">Próximos eventos</h3>
         <div id="eventsList" class="text-sm text-gray-700">
             <?php
             if($jsonError){
@@ -217,7 +219,11 @@ foreach($legendLabels as $lbl) {
                     $dayNameEs = $weekdaysEs[$dayName] ?? $dayName;
                     $dayNumber = $dt ? (int)$dt->format('j') : '';
                     $timeText = !empty($ev['time']) ? str_replace(':00','h',$ev['time']) : '';
-                    echo '<div class="py-1 ' . $eventClass . '"><strong class="pr-2">' . h($dayNameEs . ' ' . $dayNumber) . '.</strong> ';
+                    // Get label color for event
+                    $labelId = $ev['labelId'] ?? null;
+                    $color = ($labelId && isset($legendById[$labelId]['color'])) ? h($legendById[$labelId]['color']) : '#F59E0B';
+                    echo '<div class="py-1 ' . $eventClass . '"><span class="inline-block align-middle mr-2 w-2.5 h-2.5 rounded-full" style="background:' . $color . '"></span>';
+                    echo '<strong class="pr-2">' . h($dayNameEs . ' ' . $dayNumber) . '.</strong> ';
                     echo ($timeText ? h($timeText) . '. ' : '') . h($ev['title'] ?? '');
                     if(!empty($ev['note'])) echo ' <span class="text-gray-500">– ' . h($ev['note']) . '</span>';
                     echo '</div>';
