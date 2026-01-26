@@ -44,8 +44,12 @@ if (!isset($defaultTitle)) {
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+
     <!-- Alpine.js CDN -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Fit One Line JS (auto-fit text to one line)
+    <script defer src="/assets/js/fit-one-line.js"></script> -->
 
     <!-- Custom Effects CSS -->
     <link rel="stylesheet" href="assets/css/effects.css">

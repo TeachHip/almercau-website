@@ -18,15 +18,15 @@ include 'includes/header.php';
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="#filosofia"
-                class="bg-almercau-yellow hover:opacity-80 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
+                class="bg-almercau-yellow hover:opacity-80 text-gray-900 px-5 md:px-8 py-2 md:py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
                 Conoce el proyecto
             </a>
             <a href="grupo.php"
-                class="bg-almercau-blue hover:opacity-80 text-white px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
+                class="bg-almercau-blue hover:opacity-80 text-white px-5 md:px-8 py-2 md:py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
                 el Grupo de consumo
             </a>
             <a href="degustacion.php"
-                class="bg-white hover:opacity-80 text-almercau-blue px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
+                class="bg-white hover:opacity-80 text-almercau-blue px-5 md:px-8 py-2 md:py-4 rounded-full font-semibold text-lg transition transform hover:scale-105 inline-block">
                 Al bar
             </a>
         </div>
@@ -93,7 +93,7 @@ include 'includes/header.php';
                 class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition border border-gray-100">
                 <img src="assets/imgs/boton-catalogo.png" alt="Grupo de Consumo"
                     class="w-full h-64 md:h-80 object-cover" loading="lazy">
-                <div class="p-8 md:p-10">
+                <div class="p-4 md:p-10">
                     <h3 class="text-2xl md:text-3xl font-bold text-almercau-blue mb-4">
                         Grupo de Consumo
                     </h3>
@@ -106,8 +106,8 @@ include 'includes/header.php';
                         transporte, los mejores básicos de la despensa, excedentes...
                     </p>
                     <a href="grupo.php"
-                        class="inline-flex items-center gap-2 bg-almercau-blue hover:opacity-80 text-white px-6 py-3 rounded-full font-semibold transition">
-                        ¿Quieres saber cómo funciona?
+                        class="inline-flex items-center gap-2 bg-almercau-blue hover:opacity-80 text-white px-4 md:px-6 py-3 rounded-full font-semibold transition">
+                        ¿Y cómo funciona?
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                             </path>
@@ -121,7 +121,7 @@ include 'includes/header.php';
                 class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition border border-gray-100">
                 <img src="assets/imgs/comidas-y-raciones.jpg" alt="Degustación"
                     class="w-full h-64 md:h-80 object-cover" loading="lazy">
-                <div class="p-8 md:p-10">
+                <div class="p-4 md:p-10">
                     <h3 class="text-2xl md:text-3xl font-bold text-almercau-blue mb-4">
                         AlMercáu Degustación
                     </h3>
@@ -134,7 +134,7 @@ include 'includes/header.php';
                         casera y cosas ricas para picar.
                     </p>
                     <a href="degustacion.php"
-                        class="inline-flex items-center gap-2 bg-almercau-yellow hover:opacity-80 text-gray-900 px-6 py-3 rounded-full font-semibold transition">
+                        class="inline-flex items-center gap-2 bg-almercau-yellow hover:opacity-80 text-gray-900 px-4 md:px-6 py-3 rounded-full font-semibold transition">
                         ¿Vienes a tomar algo?
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
@@ -159,7 +159,7 @@ include 'includes/header.php';
             <!-- Column 1: Direct from Producer -->
             <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
                 <div class="text-6xl mb-4">✅</div>
-                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue mb-3">
+                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue">
                     Directo del productor
                 </h3>
                 <p class="text-lg text-gray-700">
@@ -170,7 +170,7 @@ include 'includes/header.php';
             <!-- Column 2: Quality First -->
             <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="text-6xl mb-4">✅</div>
-                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue mb-3">
+                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue">
                     Calidad excelente
                 </h3>
                 <p class="text-lg text-gray-700">
@@ -181,7 +181,7 @@ include 'includes/header.php';
             <!-- Column 3: Neighborhood Project -->
             <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
                 <div class="text-6xl mb-4">✅</div>
-                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue mb-3">
+                <h3 class="text-xl md:text-2xl font-bold text-almercau-blue">
                     Proyecto de barrio
                 </h3>
                 <p class="text-lg text-gray-700">

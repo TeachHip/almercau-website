@@ -1,0 +1,117 @@
+.closed-morning-overlay {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 50%;
+	background: #f3f4f6;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	z-index: 10;
+	pointer-events: none;
+	border: 1px dashed #bbb; /* DEBUG: remove after confirming visibility */
+}
+.closed-evening-overlay {
+	position: absolute;
+	left: 0; bottom: 0;
+	width: 100%;
+	height: 50%;
+	background: #f3f4f6;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	z-index: 10;
+	pointer-events: none;
+	border: 1px dashed #bbb; /* DEBUG: remove after confirming visibility */
+}
+.closed-day {
+	background: #f3f4f6 !important;
+}
+.closed-morning::before {
+	content: '';
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 50%;
+	background: #f3f4f6;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	z-index: 20;
+	pointer-events: none;
+	border: 1px dashed #bbb; /* DEBUG: remove after confirming visibility */
+}
+.closed-evening::after {
+	content: '';
+	position: absolute;
+	left: 0; bottom: 0;
+	width: 100%;
+	height: 50%;
+	background: #f3f4f6;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	z-index: 20;
+	pointer-events: none;
+	border: 1px dashed #bbb; /* DEBUG: remove after confirming visibility */
+}
+.debug-wed {
+	background: #ffcccc !important;
+}
+.debug-sat {
+	background: #cce0ff !important;
+}
+/* Half-cell overlay for Wed morning closure (top half) */
+.halfcell-wed {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 50%;
+	background: #f3f4f6; /* Tailwind bg-gray-100 */
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	z-index: 2;
+	pointer-events: none;
+}
+/* Half-cell overlay for Sat evening closure (bottom half) */
+.halfcell-sat {
+	position: absolute;
+	left: 0; bottom: 0;
+	width: 100%;
+	height: 50%;
+	background: #f3f4f6; /* Tailwind bg-gray-100 */
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	z-index: 2;
+	pointer-events: none;
+}
+.day-cell { min-height: 96px; position: relative !important; z-index: 1; }
+.muted { color: #9CA3AF; }
+
+/* Triangle for Wed morning closure (top-left) */
+.halfcell-wed {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 50%;
+	background: rgba(243,244,246,0.85); /* semi-transparent gray */
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	z-index: 5;
+	pointer-events: none;
+	border: 1px dashed #bbb; /* DEBUG: remove after confirming visibility */
+}
+/* Half-cell overlay for Sat evening closure (bottom half) */
+.halfcell-sat {
+	position: absolute;
+	left: 0; bottom: 0;
+	width: 100%;
+	height: 50%;
+	background: rgba(243,244,246,0.85); /* semi-transparent gray */
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	z-index: 5;
+	pointer-events: none;
+	border: 1px dashed #bbb; /* DEBUG: remove after confirming visibility */
+}
+
+.daycell-content {
+	position: relative;
+	z-index: 10;
+}

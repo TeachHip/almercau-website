@@ -14,27 +14,27 @@ $sectionBg = isset($dondeBg) ? $dondeBg : 'bg-almercau-yellow';
             <!-- Info Column -->
             <div class="space-y-8 text-center md:text-left no-strong-style" data-aos="fade-left" data-aos-delay="100">
                 <address>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-2 justify-center md:justify-start">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-2 justify-start text-left">
                         <svg class="w-6 h-6 text-almercau-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
                         Dirección
                     </h3>
-                    <p class="text-lg text-gray-700 pl-4 md:pl-8">
+                    <p class="text-lg text-gray-700 pl-0 md:pl-8">
                         c/ Luanco, 5 - Laviada<br>
                         (¡tras la estación de autobuses!)<br>
                         Xixón, Asturias
                     </p>
                 </address>
                 <section aria-label="Horario">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-2 justify-center md:justify-start">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-2 justify-start text-left">
                         <svg class="w-6 h-6 text-almercau-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         Horario
                     </h3>
-                    <div class="text-lg text-gray-700 space-y-1 pl-4 md:pl-8">
+                    <div class="text-lg text-gray-700 space-y-1 pl-0 md:pl-8">
                         <p><strong>Miércoles:</strong> 17:00 - 21:00h</p>
                         <p><strong>Jueves - Viernes:</strong> 11:00 - 14:30h / 17:00 - 21:00h</p>
                         <p><strong>Sábado:</strong> 11:00 - 13:00h</p>
@@ -56,6 +56,16 @@ $sectionBg = isset($dondeBg) ? $dondeBg : 'bg-almercau-yellow';
             <!-- Map Column -->
             <div class="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96 md:h-full min-h-[400px] flex items-center justify-center" data-aos="fade-right" data-aos-delay="200">
                 <div id="map-donde-estamos" class="w-full h-full min-h-[350px]" style="min-height:350px;"></div>
+            </div>
+            <style>
+            @media (max-width: 767px) {
+                /* Push Leaflet controls down on small screens */
+                #map-donde-estamos .leaflet-top,
+                #map-donde-estamos .leaflet-control-container .leaflet-top {
+                    top: 2.5rem !important;
+                }
+            }
+            </style>
             </div>
         </div>
     </div>

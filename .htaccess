@@ -1,0 +1,12 @@
+# Enable custom 404 error page
+ErrorDocument 404 /404.php
+
+# Recommended: Basic security and performance headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Optional: Prevent directory listing
+Options -Indexes

@@ -1,0 +1,8 @@
+{
+  "legendLabels": [
+    { "id": "tasting", "label": "Tasting Event", "color": "#F7EC14" }
+  ],
+  "events": [
+    { "date": "2026-01-22", "title": "Winter tasting event", "time": "18:30", "labelId": "tasting", "note": "Reserva previa" }
+  ]
+}
