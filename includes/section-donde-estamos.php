@@ -6,13 +6,13 @@ require_once __DIR__ . '/site-config.php';
 $sectionBg = isset($dondeBg) ? $dondeBg : 'bg-almercau-yellow';
 ?>
 <section id="contacto" class="py-20 <?php echo $sectionBg; ?>">
-    <div class="container mx-auto px-4 max-w-6xl" data-aos="fade-up">
+    <div class="container mx-auto px-4 max-w-6xl" data-aos="fade">
         <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue text-center mb-12">
             Dónde estamos
         </h2>
         <div class="grid md:grid-cols-2 gap-10 items-start">
             <!-- Info Column -->
-            <div class="space-y-8 text-center md:text-left no-strong-style" data-aos="fade-left" data-aos-delay="100">
+            <div class="space-y-8 text-center md:text-left no-strong-style" data-aos="fade" data-aos-delay="100">
                 <address>
                     <h3 class="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-2 justify-start text-left">
                         <svg class="w-6 h-6 text-almercau-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ $sectionBg = isset($dondeBg) ? $dondeBg : 'bg-almercau-yellow';
                 <?php endif; ?>
             </div>
             <!-- Map Column -->
-            <div class="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96 md:h-full min-h-[400px] flex items-center justify-center" data-aos="fade-right" data-aos-delay="200">
+            <div class="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96 md:h-full min-h-[400px] flex items-center justify-center" data-aos="fade" data-aos-delay="200">
                 <div id="map-donde-estamos" class="w-full h-full min-h-[350px]" style="min-height:350px;"></div>
             </div>
             <style>

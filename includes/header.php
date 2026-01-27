@@ -203,7 +203,7 @@ if (!isset($defaultTitle)) {
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-4">
                     <?php if($current_page == 'index.php'): ?>
                         <span class="text-almercau-blue font-bold underline">Home</span>
                     <?php else: ?>
@@ -226,6 +226,12 @@ if (!isset($defaultTitle)) {
                         <span class="text-almercau-blue font-bold underline">Productores</span>
                     <?php else: ?>
                         <a href="productores.php" class="text-gray-700 hover:text-almercau-blue transition">Productores</a>
+                    <?php endif; ?>
+
+                    <?php if($current_page == 'soy-mercante.php'): ?>
+                        <span class="text-almercau-blue font-bold underline">Soy mercante</span>
+                    <?php else: ?>
+                        <a href="soy-mercante.php" class="text-gray-700 hover:text-almercau-blue transition">Soy mercante</a>
                     <?php endif; ?>
 
                     <?php if($current_page == 'contacto.php'): ?>
@@ -289,6 +295,12 @@ if (!isset($defaultTitle)) {
                         <span class="text-almercau-blue font-bold underline py-2">Productores</span>
                     <?php else: ?>
                         <a href="productores.php" class="text-gray-700 hover:text-almercau-blue transition py-2">Productores</a>
+                    <?php endif; ?>
+
+                    <?php if($current_page == 'soy-mercante.php'): ?>
+                        <span class="text-almercau-blue font-bold underline py-2">Soy mercante</span>
+                    <?php else: ?>
+                        <a href="soy-mercante.php" class="text-gray-700 hover:text-almercau-blue transition py-2">Soy mercante</a>
                     <?php endif; ?>
 
                     <?php if($current_page == 'contacto.php'): ?>

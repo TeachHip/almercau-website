@@ -157,7 +157,7 @@ include 'includes/header.php';
 
         <div class="grid md:grid-cols-3 gap-8 text-center">
             <!-- Column 1: Direct from Producer -->
-            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex flex-col items-center" data-aos="fade" data-aos-delay="100">
                 <div class="text-6xl mb-4">✅</div>
                 <h3 class="text-xl md:text-2xl font-bold text-almercau-blue">
                     Directo del productor
@@ -168,7 +168,7 @@ include 'includes/header.php';
             </div>
 
             <!-- Column 2: Quality First -->
-            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex flex-col items-center" data-aos="fade" data-aos-delay="200">
                 <div class="text-6xl mb-4">✅</div>
                 <h3 class="text-xl md:text-2xl font-bold text-almercau-blue">
                     Calidad excelente
@@ -179,7 +179,7 @@ include 'includes/header.php';
             </div>
 
             <!-- Column 3: Neighborhood Project -->
-            <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex flex-col items-center" data-aos="fade" data-aos-delay="300">
                 <div class="text-6xl mb-4">✅</div>
                 <h3 class="text-xl md:text-2xl font-bold text-almercau-blue">
                     Proyecto de barrio

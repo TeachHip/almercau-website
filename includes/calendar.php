@@ -1,7 +1,19 @@
 <?php
+if (!function_exists('isColorDark')) {
+    function isColorDark($hex) {
+        $hex = ltrim($hex, '#');
+        if(strlen($hex) === 3) $hex = $hex[0].$hex[0].$hex[1].$hex[1].$hex[2].$hex[2];
+        $r = hexdec(substr($hex,0,2));
+        $g = hexdec(substr($hex,2,2));
+        $b = hexdec(substr($hex,4,2));
+        // Perceived brightness
+        return (($r*299 + $g*587 + $b*114) / 1000) < 128;
+    }
+}
+
+
 // Calendar logic extracted from soy-mercante.php
 
-date_default_timezone_set('UTC');
 function isoDate($y, $m, $d){ return sprintf('%04d-%02d-%02d', $y, $m, $d); }
 function ordinal($n){
     $n = (int)$n;
@@ -88,6 +100,7 @@ function renderMonthHTML($year, $month, $eventsByDate){
             '2026-12-08', // Inmaculada
             '2026-12-25', // Navidad
         ];
+        $today = new DateTimeImmutable('today');
         for($d=1;$d<=$lastDay;$d++){
             $dateKey = sprintf('%04d-%02d-%02d', $year, $month, $d);
             $evs = $eventsByDate[$dateKey] ?? [];
@@ -97,6 +110,8 @@ function renderMonthHTML($year, $month, $eventsByDate){
             $isHoliday = in_array($dateKey, $bankHolidays);
             $dayTopClass = ($isWeekend || $isHoliday) ? 'text-red-500' : 'text-gray-800';
             $bgClass = (in_array((int)$weekday, [1,2,7])) ? 'bg-gray-100' : '';
+            $isToday = $dt->format('Y-m-d') === $today->format('Y-m-d');
+            $todayClass = $isToday ? 'today border-2 border-black' : '';
             $dayContent = '<span class="' . $dayTopClass . ' text-sm font-semibold">' . h($d) . '</span>';
             $dots = '';
             if(count($evs)){
@@ -132,7 +147,7 @@ function renderMonthHTML($year, $month, $eventsByDate){
                 $closureClass = 'closed-evening';
                 $overlayDiv = '<div style="position:absolute;left:0;bottom:0;width:100%;height:50%;background:#f3f4f6;z-index:1;pointer-events:none;"></div>';
             }
-            $html[] = '<div class="border rounded day-cell p-3 flex flex-col justify-between ' . $bgClass . ' ' . $closureClass . ' relative">'
+            $html[] = '<div class="border rounded day-cell p-3 flex flex-col justify-between ' . $bgClass . ' ' . $closureClass . ' ' . $todayClass . ' relative">'
                 . $overlayDiv
                 . ($dots ? '<span class="absolute top-0.5 right-0.5 flex flex-row z-20 space-x-0.5 pointer-events-none">' . $dots . '</span>' : '')
                 . '<div class="daycell-content" style="position:relative;z-index:10;display:flex;align-items:center;">' . $dayContent . '</div>'
@@ -217,13 +232,14 @@ foreach($legendLabels as $lbl) {
                     $eventClass = $isPast ? 'text-gray-400 italic' : 'text-gray-700';
                     $dayName = $dt ? $dt->format('D') : '';
                     $dayNameEs = $weekdaysEs[$dayName] ?? $dayName;
-                    $dayNumber = $dt ? (int)$dt->format('j') : '';
+                    $dayNumber = $dt ? str_pad($dt->format('j'), 2, '0', STR_PAD_LEFT) : '';
                     $timeText = !empty($ev['time']) ? str_replace(':00','h',$ev['time']) : '';
                     // Get label color for event
                     $labelId = $ev['labelId'] ?? null;
                     $color = ($labelId && isset($legendById[$labelId]['color'])) ? h($legendById[$labelId]['color']) : '#F59E0B';
-                    echo '<div class="py-1 ' . $eventClass . '"><span class="inline-block align-middle mr-2 w-2.5 h-2.5 rounded-full" style="background:' . $color . '"></span>';
-                    echo '<strong class="pr-2">' . h($dayNameEs . ' ' . $dayNumber) . '.</strong> ';
+                    $dateTextClass = isColorDark($color) ? 'text-white' : 'text-gray-900';
+                    echo '<div class="py-1 ' . $eventClass . '">';
+                    echo '<span class="pr-2 px-2 py-0.5 rounded font-semibold font-mono tracking-tight ' . $dateTextClass . '" style="background:' . $color . '">' . h($dayNameEs . ' ' . $dayNumber) . '</span> ';
                     echo ($timeText ? h($timeText) . '. ' : '') . h($ev['title'] ?? '');
                     if(!empty($ev['note'])) echo ' <span class="text-gray-500">– ' . h($ev['note']) . '</span>';
                     echo '</div>';

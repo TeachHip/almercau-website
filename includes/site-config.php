@@ -1,4 +1,6 @@
 <?php
+// Set timezone globally for all scripts
+date_default_timezone_set('Europe/Madrid');
 /**
  * Centralized site content configuration
  * All default content definitions in one place for easy updates
@@ -15,7 +17,7 @@ $pageTitles = [
     'degustacion' => 'Bar degustación - Aperitivos de calidad | AlMercáu Gijón',
     'productores' => 'Nuestros Productores - Pequeños artesanos de calidad | AlMercáu',
     'contacto' => 'Contacto y Horario - Laviada, Xixón | AlMercáu',
-    'soy-mercante' => 'Soy mercante - Información y calendario | AlMercáu'
+    'soy-mercante' => 'Información para mercantes y calendario | AlMercáu'
 ];
 
 $pageDescriptions = [
@@ -24,7 +26,7 @@ $pageDescriptions = [
     'degustacion' => 'Bar-degustación en el barrio de Laviada. Aperitivos, sesión vermut, vinos exclusivos, cervezas artesanas, conservas... Abierto a todo el mundo. Prueba, comparte y disfruta.',
     'productores' => 'Trabajamos con los mejores productores: miel, setas, cerveza, quesos, vinos, conservas... Pequeños productores de calidad excepcional en AlMercáu.',
     'contacto' => 'Visítanos en c. Luanco 5, Laviada, Gijón. Horarios, ubicación y contacto del grupo de consumo y bar AlMercáu. Detrás de los ALSAs. ☎ 611 183 123',
-    'soy-mercante' => 'Información para mercantes y calendario de eventos del grupo de consumo AlMercáu en Gijón.'
+    'soy-mercante' => 'Información para mercantes (socios) y calendario de eventos del grupo de consumo AlMercáu en Gijón.'
 ];
 
 // Business Contact Information

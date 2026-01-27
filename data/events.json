@@ -2,21 +2,20 @@
   "legendLabels": [
     { "id": "pedido", "label": "Pedido de Grupo", "color": "#fde047" },
     { "id": "pedido-especial", "label": "Pedido de Grupo especial", "color": "#f59e1a" },
-    { "id": "cata", "label": "Cata", "color": "#991b1b" },
-    { "id": "cerrado", "label": "Cerrado", "color": "#222" },
+    { "id": "grupo-consumo", "label": "Actividad de Grupo de Consumo", "color": "#a21caf" },
     { "id": "fuera", "label": "Actividad fuera", "color": "#22c55e" },
+    { "id": "cata", "label": "Cata", "color": "#991b1b" },
     { "id": "privado", "label": "Espacio reservado", "color": "#2563eb" },
-    { "id": "grupo-consumo", "label": "Actividad de Grupo de Consumo", "color": "#a21caf" }
+    { "id": "cerrado", "label": "Cerrado", "color": "#222" }
   ],
   "events": [
-    { "date": "2026-01-22", "title": "Winter tasting event", "time": "18:30", "labelId": "cata", "note": "Reserva previa" },
     { "date": "2026-01-30", "title": "Cerrado. Estamos en el Teatro Jovellanos", "labelId": "cerrado" },
-    { "date": "2026-02-15", "title": "Calçotada", "labelId": "fuera" },
-    { "date": "2026-02-08", "title": "Reservado grupo", "labelId": "privado" },
+    { "date": "2026-02-15", "title": "Calçotada (a confirmar)", "labelId": "fuera" },
+    { "date": "2026-02-08", "title": "Espacio reservado", "labelId": "privado" },
     { "date": "2026-02-06", "title": "Tenemos que hablar", "time": "19:00", "labelId": "grupo-consumo" },
     { "date": "2026-02-27", "title": "Tenemos que hablar", "time": "19:00", "labelId": "grupo-consumo" },
-    { "date": "2026-01-26", "title": "Pedido de Grupo", "labelId": "pedido" },
-    { "date": "2026-02-23", "title": "Pedido de Grupo", "labelId": "pedido" },
-    { "date": "2026-02-09", "title": "Pedido de Grupo especial", "labelId": "pedido-especial" }
+    { "date": "2026-01-26", "title": "Pedido de Grupo. Recogida hasta viernes", "labelId": "pedido" },
+    { "date": "2026-02-23", "title": "Pedido de Grupo. Recogida hasta viernes", "labelId": "pedido" },
+    { "date": "2026-02-09", "title": "Pedido de Grupo especial. Recogida hasta viernes", "labelId": "pedido-especial" }
   ]
 }
