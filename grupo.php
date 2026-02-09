@@ -160,7 +160,7 @@ include 'includes/header.php';
                     <div>
                         <h3 class="text-xl font-bold text-gray-900 mb-2">Relación calidad/precio</h3>
                         <p class="text-gray-700">
-                            Sin márgenes comerciales. A veces hasta menos que en origen (por comprar en grupo)
+                            Sin márgenes comerciales. A veces hasta menos que en origen (por comprar en grupo) pagando precio justo al productor
                         </p>
                     </div>
                 </div>

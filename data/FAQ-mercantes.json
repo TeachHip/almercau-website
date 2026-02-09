@@ -9,7 +9,7 @@
   },
   {
     "question": "¿Cómo y dónde se hacen los pedidos y recogen los productos?",
-    "answer": "<p>Los pedidos se hacen a través de <strong>la aplicación de AlMercáu</strong> o pasando por el local. En general los productos se abonan al pedirlos tras recibir el <strong>Ticket de compra</strong> (Bizum) o en el momento de recogerlos (efectivo). Se indicará en cada caso.</p> <p>Los productos de <em>Pedidos de Grupo</em> y los de <em>Pedido Exprés</em> (ver abajo) son siempre pre-pago.</p><p>Todo se recoge en el local (no hay envíos). Si por alguna razón no te va bien, pide a alguien que lo recoja por ti (avisa antes) o pregunta por si podemos encontrar una solución.</p>"
+    "answer": "<p>Los pedidos se hacen a través de <strong>la aplicación de AlMercáu</strong> o pasando por el local. En general los productos se abonan al pedirlos tras recibir el <strong>Ticket de compra</strong> (Bizum) o en el momento de recogerlos (efectivo). Se indicará en cada caso.</p> <p>Los productos de <em>Pedidos de Grupo</em> y los de <em>Pedido Exprés</em> (ver abajo) son siempre pre-pago.</p><p>Todo se recoge en el local (no hay envíos). Si por alguna razón no te va bien, pide a alguien que lo recoja por ti (avisa antes) o pregunta por si podemos encontrar otra solución.</p>"
   },
   {
     "question": "¿Cuándo puedo pasar a recogerlo?",
@@ -29,7 +29,7 @@
   },
   {
     "question": "¿Tienen siempre el mismo precio? Precio mercante",
-    "answer": "<p class='principal'>La respuesta rápida es 'no'. Por lo general todos los productos tienen un <strong>precio de mercante</strong> y un <strong>precio de no-mercante</strong>.</p><p>El precio mercante es un precio sin margen de beneficio, por ello se paga la cuota. El de no-mercante es un muy buen precio ligeramente superior.</p><p>El precio mercante se aplica a todos los <strong>Pedidos de Grupo</strong> y <strong>Pedidos Exprés</strong> si se realizan a tiempo. Si pides pasado el plazo y, por casualidad, hay, el precio ya es de no-mercante </p><p>En Fondo de stock los productos más básicos tienen precio de mercante y de no mercante. Los demás no, pero lo tuvieron cuando se pidieron en un Pedido Exprés.</p>"
+    "answer": "<p class='principal'>La respuesta rápida es 'no'. Por lo general todos los productos tienen un <strong>precio de mercante</strong> y un <strong>precio de no-mercante</strong>.</p><p>El precio mercante es un precio sin margen de beneficio, por ello se paga la cuota. El de no-mercante es un muy buen precio ligeramente superior.</p><p>El precio mercante se aplica a todos los <strong>Pedidos de Grupo</strong> y <strong>Pedidos Exprés</strong> si se realizan a tiempo. Si pides pasado el plazo y, por casualidad, aún hay existencias, el precio ya es de no-mercante.</p><p>En Fondo de stock los productos más básicos tienen precio de mercante y de no mercante. Los demás no, pero lo tuvieron cuando se pidieron en un Pedido Exprés. <strong>Resumen</strong>: si pides cuando hay pedido siempre tendrás stock y el mejor precio.</p>"
   },
   {
     "question": "¿Cómo se decide qué productos tenemos disponibles?",

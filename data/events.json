@@ -14,8 +14,12 @@
     { "date": "2026-02-08", "title": "Espacio reservado", "labelId": "privado" },
     { "date": "2026-02-06", "title": "Tenemos que hablar", "time": "19:00", "labelId": "grupo-consumo" },
     { "date": "2026-02-27", "title": "Tenemos que hablar", "time": "19:00", "labelId": "grupo-consumo" },
+    { "date": "2026-03-27", "title": "Tenemos que hablar", "time": "19:00", "labelId": "grupo-consumo" },
     { "date": "2026-01-26", "title": "Pedido de Grupo. Recogida hasta viernes", "labelId": "pedido" },
     { "date": "2026-02-23", "title": "Pedido de Grupo. Recogida hasta viernes", "labelId": "pedido" },
     { "date": "2026-02-09", "title": "Pedido de Grupo especial. Recogida hasta viernes", "labelId": "pedido-especial" }
+    ,
+    { "date": "2026-03-09", "title": "Pedido de Grupo especial. Recogida hasta viernes", "labelId": "pedido-especial" },
+    { "date": "2026-03-23", "title": "Pedido de Grupo. Recogida hasta viernes", "labelId": "pedido" }
   ]
 }

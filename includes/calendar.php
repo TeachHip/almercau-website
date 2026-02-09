@@ -109,7 +109,6 @@ function renderMonthHTML($year, $month, $eventsByDate){
             $isWeekend = (int)$weekday >= 6;
             $isHoliday = in_array($dateKey, $bankHolidays);
             $dayTopClass = ($isWeekend || $isHoliday) ? 'text-red-500' : 'text-gray-800';
-            $bgClass = (in_array((int)$weekday, [1,2,7])) ? 'bg-gray-100' : '';
             $isToday = $dt->format('Y-m-d') === $today->format('Y-m-d');
             $todayClass = $isToday ? 'today border-2 border-black' : '';
             $dayContent = '<span class="' . $dayTopClass . ' text-sm font-semibold">' . h($d) . '</span>';
@@ -125,27 +124,44 @@ function renderMonthHTML($year, $month, $eventsByDate){
                 }
                 if(count($evs) > 3) $dots .= '<span class="text-xs text-gray-600 ml-1">+' . (count($evs)-3) . '</span>';
             }
-            // Half-cell overlays for Wed (top half) and Sat (bottom half)
-            $halfOverlay = '';
-            $debugBg = '';
-            if ((int)$weekday === 3) { // Wed
-                $halfOverlay = '<span class="halfcell-wed"></span>';
-                $debugBg = 'debug-wed';
-            } elseif ((int)$weekday === 6) { // Sat
-                $halfOverlay = '<span class="halfcell-sat"></span>';
-                $debugBg = 'debug-sat';
-            }
-            // Determine closure class
+            // Dynamic open/closed/half-closed logic using opening-times.php
+            $currentTimes = getOpeningTimesForDate($dateKey);
+            $dayMap = [1=>'Mon',2=>'Tue',3=>'Wed',4=>'Thu',5=>'Fri',6=>'Sat',7=>'Sun'];
+            $dayKey = $dayMap[(int)$weekday];
+            $hours = $currentTimes && !empty($currentTimes['opening'][$dayKey]) ? $currentTimes['opening'][$dayKey] : null;
             $closureClass = '';
             $overlayDiv = '';
-            if (in_array((int)$weekday, [1,2,7])) { // Mon, Tue, Sun fully closed
+            if (!$hours) {
+                // Fully closed (full grey)
                 $closureClass = 'closed-day';
-            } elseif ((int)$weekday === 3) { // Wed morning closed
-                $closureClass = 'closed-morning';
-                $overlayDiv = '<div style="position:absolute;top:0;left:0;width:100%;height:50%;background:#f3f4f6;z-index:1;pointer-events:none;"></div>';
-            } elseif ((int)$weekday === 6) { // Sat evening closed
-                $closureClass = 'closed-evening';
-                $overlayDiv = '<div style="position:absolute;left:0;bottom:0;width:100%;height:50%;background:#f3f4f6;z-index:1;pointer-events:none;"></div>';
+            } else {
+                // Split into time blocks
+                $blocks = preg_split('/[,\/]/', $hours);
+                $blockCount = count($blocks);
+                if ($blockCount === 1) {
+                    $block = trim($blocks[0]);
+                    if (preg_match('/^(\d{2}):(\d{2})\s*-\s*(\d{2}):(\d{2})/', $block, $m)) {
+                        $start = (int)$m[1];
+                        $end = (int)$m[3];
+                        // If block is only morning (before 15:00)
+                        if ($end <= 15) {
+                            $closureClass = 'closed-evening';
+                            $overlayDiv = '<div style="position:absolute;left:0;bottom:0;width:100%;height:50%;background:#f3f4f6;z-index:1;pointer-events:none;"></div>';
+                        // If block is only evening (starts at or after 15:00)
+                        } elseif ($start >= 15) {
+                            $closureClass = 'closed-morning';
+                            $overlayDiv = '<div style="position:absolute;top:0;left:0;width:100%;height:50%;background:#f3f4f6;z-index:1;pointer-events:none;"></div>';
+                        } else {
+                            // Open all day (white)
+                        }
+                    }
+                } elseif ($blockCount > 1) {
+                    // If there are both morning and evening blocks, open all day (white)
+                }
+            }
+            $bgClass = '';
+            if (!$hours) {
+                $bgClass = 'bg-gray-100';
             }
             $html[] = '<div class="border rounded day-cell p-3 flex flex-col justify-between ' . $bgClass . ' ' . $closureClass . ' ' . $todayClass . ' relative">'
                 . $overlayDiv
@@ -221,8 +237,17 @@ foreach($legendLabels as $lbl) {
                 foreach($events as $ev){
                     $d = $ev['date'] ?? '';
                     $dt = DateTimeImmutable::createFromFormat('Y-m-d', $d);
-                    $monthNum = $dt ? (int)$dt->format('n') : 0;
-                    $yearNum = $dt ? (int)$dt->format('Y') : 0;
+                    if (!$dt) continue;
+                    // Only show events from current or next month
+                    $eventYear = (int)$dt->format('Y');
+                    $eventMonth = (int)$dt->format('n');
+                    $show = false;
+                    if (($eventYear === $y1 && $eventMonth === $m1) || ($eventYear === $y2 && $eventMonth === $m2)) {
+                        $show = true;
+                    }
+                    if (!$show) continue;
+                    $monthNum = $eventMonth;
+                    $yearNum = $eventYear;
                     $monthKey = $yearNum . '-' . $monthNum;
                     if($monthKey !== $currentMonth && $monthNum > 0){
                         $currentMonth = $monthKey;

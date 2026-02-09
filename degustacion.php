@@ -1,4 +1,14 @@
+
 <?php
+// TEMP: Force date to March 9, 2026 for testing
+putenv('TZ=Europe/Madrid');
+class FakeDateTimeImmutable extends DateTimeImmutable {
+    public static $fakeNow = '2026-03-09';
+    public static function today() {
+        return new self(self::$fakeNow);
+    }
+}
+// Patch getOpeningTimesForDate to use FakeDateTimeImmutable if exists
 require_once 'includes/site-config.php';
 $pageTitle = $pageTitles['degustacion'];
 $pageDescription = $pageDescriptions['degustacion'];
@@ -79,7 +89,7 @@ include 'includes/header.php';
                         <div>
                             <h4 class="text-xl font-bold text-gray-900 mb-2">Cerveza artesana</h4>
                             <p class="text-gray-700">
-                                Cervezas de pequeños productores artesanos de dAsturias. Diferentes variedades pero sin forzar los sabores para que las disfrutes aunque no seas 'bebedor de cerveza artesana'. Pruébalas o pregunta a quien tengas al lado y rompe otro prejuicio.
+                                Cervezas de pequeños productores artesanos de Asturias. Diferentes variedades pero sin forzar los sabores para que las disfrutes aunque no seas 'bebedor de cerveza artesana'. Pruébalas o pregunta a quien tengas al lado y rompe otro prejuicio.
                             </p>
                         </div>
                     </div>
@@ -207,32 +217,70 @@ include 'includes/header.php';
     </section>
 
     <!-- Horario -->
+
     <section class="py-20 bg-almercau-yellow">
         <div class="container mx-auto px-4 max-w-4xl">
             <h2 class="text-3xl md:text-4xl font-bold text-almercau-blue mb-12 text-center">
                 Cuándo abrimos
             </h2>
-
             <div class="max-w-2xl mx-auto space-y-4 mb-8">
-                <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
-                    <span class="text-lg font-semibold text-gray-900">Miércoles</span>
-                    <span class="text-lg text-gray-700">17:00 - 21:00h</span>
-                </div>
-
-                <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
-                    <span class="text-lg font-semibold text-gray-900">Jueves - Viernes</span>
-                    <span class="text-lg text-gray-700">11:00 - 14:30h / 17:00 - 21:00h</span>
-                </div>
-
-                <div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">
-                    <span class="text-lg font-semibold text-gray-900">Sábado</span>
-                    <span class="text-lg text-gray-700">11:00 - 15:00h</span>
-                </div>
+                <?php
+                require_once __DIR__ . '/includes/opening-times.php';
+                $currentTimes = getOpeningTimesForDate();
+                $daysEs = [
+                    'Mon' => 'Lunes',
+                    'Tue' => 'Martes',
+                    'Wed' => 'Miércoles',
+                    'Thu' => 'Jueves',
+                    'Fri' => 'Viernes',
+                    'Sat' => 'Sábado',
+                    'Sun' => 'Domingo'
+                ];
+                if ($currentTimes && !empty($currentTimes['opening'])) {
+                    // Show all weekdays (Mon-Sun) that are open
+                    foreach (["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] as $d) {
+                        $hours = $currentTimes['opening'][$d] ?? null;
+                        if (!$hours) continue;
+                        $blocks = preg_split('/[,\/]/', $hours);
+                        $formattedBlocks = [];
+                        foreach ($blocks as $block) {
+                            $block = trim($block);
+                            if (preg_match('/^(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})/', $block, $m)) {
+                                $formattedBlocks[] = $m[1] . ' - ' . $m[2] . 'h';
+                            } else {
+                                $formattedBlocks[] = $block;
+                            }
+                        }
+                        $hoursWithH = implode(' / ', $formattedBlocks);
+                        echo '<div class="flex items-center justify-between bg-white rounded-lg p-5 shadow-sm">';
+                        echo '<span class="text-lg font-semibold text-gray-900">' . $daysEs[$d] . '</span>';
+                        echo '<span class="text-lg text-gray-700">' . htmlspecialchars($hoursWithH) . '</span>';
+                        echo '</div>';
+                    }
+                } else {
+                    echo '<div class="text-center text-gray-800 font-medium text-lg">No hay horario disponible.</div>';
+                }
+                ?>
             </div>
-
-            <p class="text-center text-gray-800 font-medium text-lg">
-                Lunes, martes y domingo: cerrado
-            </p>
+            <?php
+            // Dynamically list closed days in the same sentence structure
+            $closedDays = [];
+            foreach (["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] as $d) {
+                if (empty($currentTimes['opening'][$d])) {
+                    $closedDays[] = $daysEs[$d];
+                }
+            }
+            if ($closedDays) {
+                $last = array_pop($closedDays);
+                $closedText = '';
+                if ($closedDays) {
+                    $closedText = implode(', ', $closedDays) . ' y ' . $last;
+                } else {
+                    $closedText = $last;
+                }
+                echo '<p class="text-center text-gray-800 font-medium text-lg">' . $closedText . ': cerrado</p>';
+            }
+            ?>
         </div>
     </section>
 

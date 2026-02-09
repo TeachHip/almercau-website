@@ -35,9 +35,52 @@ $sectionBg = isset($dondeBg) ? $dondeBg : 'bg-almercau-yellow';
                         Horario
                     </h3>
                     <div class="text-lg text-gray-700 space-y-1 pl-0 md:pl-8">
-                        <p><strong>Miércoles:</strong> 17:00 - 21:00h</p>
-                        <p><strong>Jueves - Viernes:</strong> 11:00 - 14:30h / 17:00 - 21:00h</p>
-                        <p><strong>Sábado:</strong> 11:00 - 13:00h</p>
+                        <?php
+                        $currentTimes = getOpeningTimesForDate();
+                        $daysEs = [
+                            'Mon' => 'Lunes',
+                            'Tue' => 'Martes',
+                            'Wed' => 'Miércoles',
+                            'Thu' => 'Jueves',
+                            'Fri' => 'Viernes',
+                            'Sat' => 'Sábado',
+                            'Sun' => 'Domingo'
+                        ];
+                        if ($currentTimes && !empty($currentTimes['opening'])) {
+                            foreach (["Wed","Thu","Fri","Sat"] as $d) {
+                                $hours = $currentTimes['opening'][$d] ?? null;
+                                if ($hours) {
+                                    // Split by comma or slash, trim, and format each block
+                                    $blocks = preg_split('/[,\/]/', $hours);
+                                    $formattedBlocks = [];
+                                    foreach ($blocks as $block) {
+                                        $block = trim($block);
+                                        // Format as 'HH:MM - HH:MMh'
+                                        if (preg_match('/^(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})/', $block, $m)) {
+                                            $formattedBlocks[] = $m[1] . ' - ' . $m[2] . 'h';
+                                        } else {
+                                            $formattedBlocks[] = $block;
+                                        }
+                                    }
+                                    $hoursWithH = implode(' / ', $formattedBlocks);
+                                    // Merge Thu+Fri as before
+                                    if ($d === 'Thu') {
+                                        $friHours = $currentTimes['opening']['Fri'] ?? null;
+                                        if ($friHours === $hours) {
+                                            echo '<p><strong>Jueves - Viernes:</strong> ' . htmlspecialchars($hoursWithH) . '</p>';
+                                            continue;
+                                        }
+                                    }
+                                    if ($d === 'Fri' && isset($currentTimes['opening']['Thu']) && $currentTimes['opening']['Thu'] === $hours) {
+                                        continue; // Already shown as Jueves - Viernes
+                                    }
+                                    echo '<p><strong>' . $daysEs[$d] . ':</strong> ' . htmlspecialchars($hoursWithH) . '</p>';
+                                }
+                            }
+                        } else {
+                            echo '<p>No hay horario disponible.</p>';
+                        }
+                        ?>
                         <p class="pt-2 leading-tight"><em>Grupo de Consumo abierto por whatsapp de lunes a viernes en horario de oficina</em></p>
                     </div>
                 </section>

@@ -117,7 +117,38 @@ if (!isset($defaultTitle)) {
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
         <?php
-        // Build JSON-LD schema using site-config.php variables
+        // Build JSON-LD schema using site-config.php variables and opening-times.php
+        $currentTimes = getOpeningTimesForDate();
+        $openingSpecs = [];
+        $dayMap = [
+            'Mon' => 'Monday',
+            'Tue' => 'Tuesday',
+            'Wed' => 'Wednesday',
+            'Thu' => 'Thursday',
+            'Fri' => 'Friday',
+            'Sat' => 'Saturday',
+            'Sun' => 'Sunday'
+        ];
+        if ($currentTimes && !empty($currentTimes['opening'])) {
+            foreach (["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] as $d) {
+                $hours = $currentTimes['opening'][$d] ?? null;
+                if ($hours) {
+                    // Split by comma or slash, trim, and format each block
+                    $blocks = preg_split('/[,\/]/', $hours);
+                    foreach ($blocks as $block) {
+                        $block = trim($block);
+                        if (preg_match('/^(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})/', $block, $m)) {
+                            $openingSpecs[] = [
+                                "@type" => "OpeningHoursSpecification",
+                                "dayOfWeek" => $dayMap[$d],
+                                "opens" => $m[1],
+                                "closes" => $m[2]
+                            ];
+                        }
+                    }
+                }
+            }
+        }
         $schema = [
             "@context" => "https://schema.org",
             "@type" => "LocalBusiness",
@@ -141,32 +172,7 @@ if (!isset($defaultTitle)) {
                 "latitude" => $shopLat,
                 "longitude" => $shopLng
             ],
-            "openingHoursSpecification" => [
-                [
-                    "@type" => "OpeningHoursSpecification",
-                    "dayOfWeek" => "Wednesday",
-                    "opens" => "17:00",
-                    "closes" => "21:00"
-                ],
-                [
-                    "@type" => "OpeningHoursSpecification",
-                    "dayOfWeek" => ["Thursday", "Friday"],
-                    "opens" => "11:00",
-                    "closes" => "14:30"
-                ],
-                [
-                    "@type" => "OpeningHoursSpecification",
-                    "dayOfWeek" => ["Thursday", "Friday"],
-                    "opens" => "17:00",
-                    "closes" => "21:00"
-                ],
-                [
-                    "@type" => "OpeningHoursSpecification",
-                    "dayOfWeek" => "Saturday",
-                    "opens" => "11:00",
-                    "closes" => "13:00"
-                ]
-            ],
+            "openingHoursSpecification" => $openingSpecs,
             "priceRange" => "€",
             "servesCuisine" => "Spanish",
             "sameAs" => array_filter([

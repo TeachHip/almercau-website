@@ -1,6 +1,10 @@
 <?php
 // Set timezone globally for all scripts
 date_default_timezone_set('Europe/Madrid');
+// Load opening times logic globally
+require_once __DIR__ . '/opening-times.php';
+// Set timezone globally for all scripts
+date_default_timezone_set('Europe/Madrid');
 /**
  * Centralized site content configuration
  * All default content definitions in one place for easy updates
@@ -53,12 +57,6 @@ $defaultOgImage = 'https://almercau.org/assets/imgs/almercau.png';
 $shopLat = 43.53827092416648;
 $shopLng = -5.668128001842376;
 
-// Opening Hours
-$openingHours = [
-    'wednesday' => '17:00 - 21:00h',
-    'thursday_friday' => '11:00 - 14:30h / 17:00 - 21:00h',
-    'saturday' => '11:00 - 13:00h'
-];
 
 // Individual producer arrays
 $best_producer1 = [
